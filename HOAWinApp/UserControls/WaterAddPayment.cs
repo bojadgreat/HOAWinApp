@@ -251,22 +251,26 @@ namespace HOAWinApp.UserControls
                             //30.1-40 current due = 350 + 70 amount due
                             //40.1< current due = 350 + 80 amount due
 
-                            if(payAmount >= 0)
+                            if(payAmount > 0)
                             {
 
                                 //get divName current total reading
                                 double currentTotalReading = getDoubData("SELECT CURRENT FROM watercoldata WHERE NAME = '" + divName + "';");
                                 //get divName amount due
-                                double AmountDue = getDoubData("SELECT AMTDUE FROM watercoldata WHERE NAME = '" + divName + "';"); 
-                                if (AmountDue >= 0 /*&& payAmount == AmountDue*/)
+                                double AmountDue = getDoubData("SELECT AMTDUE FROM watercoldata WHERE NAME = '" + divName + "';");
+                                //get divName Reading
+                                double reading = getDoubData("SELECT READING FROM watercoldata WHERE NAME = '" + divName + "';");
+
+
+                                if (AmountDue >= 0 && payAmount == AmountDue)
                                 {
-                                    double newAmountDue = AmountDue + payAmount;
+                                    double newAmountDue = AmountDue - payAmount;
                                     //update amount due
                                     UpData("UPDATE watercoldata SET AMTDUE = " + newAmountDue + " WHERE NAME = '" + divName + "';");              
                                     //updated previous based on current
                                     UpData("UPDATE watercoldata SET PREVIOUS = " + currentTotalReading + " WHERE NAME = '" + divName + "';");
                                     //update current into 0
-                                    UpData("UPDATE watercoldata SET CURRENT = " + 0 + " WHERE NAME = '" + divName + "';");
+                                    UpData("UPDATE watercoldata SET CURRENT = " + (currentTotalReading + reading) + " WHERE NAME = '" + divName + "';");
                                     //update reading into 0
                                     UpData("UPDATE watercoldata SET READING = " + 0 + " WHERE NAME = '" + divName + "';");
                                     
@@ -274,6 +278,7 @@ namespace HOAWinApp.UserControls
                                     if(newAmountDue == 0)
                                     {
                                         UpData("UPDATE watercoldata SET STATUS = '" + "BALANCE PAID" + "' WHERE NAME = '" + divName + "';");
+
                                     }
                                     else
                                     {
@@ -283,6 +288,9 @@ namespace HOAWinApp.UserControls
                                     //add to history
                                     insertHistData("INSERT INTO watercollhist(dateTimeStamp, fName, amPaid, transDate) VALUES('" + currentDate.ToString("yyyy-MM-dd HH:ss") + "', '" + clientNameTB.Text + "', " + payAmount + ", '" + dtpGarbHist.Text + "');");
                                     /*insertHistData("INSERT INTO overalltransachist(dateTimeStamp, transType, fullName, payAmount, transDate) VALUES('" + currentDate.ToString("yyyy-MM-dd HH:ss") + "', '" + transType + "', '" + clientNameTB.Text + "', " + payAmount + ", '" + dtpGarbHist.Text + ";");*/
+                                    Form tmp = this.FindForm();
+                                    tmp.Close();
+                                    tmp.Dispose();
                                 }
 
                             }
