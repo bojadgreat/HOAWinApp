@@ -20,15 +20,13 @@ using System.Text.RegularExpressions;
 
 namespace HOAWinApp.UserControls
 {
-    public partial class GarbAddPayment : UserControl
+    public partial class WaterAddPayment : UserControl
     {
 
         string transType = "";
-        public GarbAddPayment()
+        public WaterAddPayment()
         {
             InitializeComponent();
-            remCBox.Items.Add("PAID");
-            remCBox.Items.Add("NOT PAID");
             payAmTB.TextChanged += payAmTB_TextChanged;
         }
 
@@ -64,12 +62,12 @@ namespace HOAWinApp.UserControls
 
                 dbConn.close_db();
 
-                return(strColl);
+                return (strColl);
             }
             else
             {
                 MessageBox.Show("Database Error");
-                return(null);
+                return (null);
             }
         }
 
@@ -91,7 +89,7 @@ namespace HOAWinApp.UserControls
 
                 object result = mysqlcom.ExecuteScalar();
 
-                if (result != null) 
+                if (result != null)
                 {
                     doubData = Convert.ToDouble(result);
                 }
@@ -108,7 +106,7 @@ namespace HOAWinApp.UserControls
             }
         }
 
-        private string getPromRem(string strQuer)
+        /*private string getPromRem(string strQuer)
         {
             string promRem = "";
             var dbConn = new dbConnect();
@@ -141,9 +139,9 @@ namespace HOAWinApp.UserControls
 
                 return promRem;
             }
-        }
+        }*/
 
-        private void UpData(string strQuer) 
+        private void UpData(string strQuer)
         {
             var dbConn = new dbConnect();
             if (dbConn.connect_db())
@@ -158,7 +156,7 @@ namespace HOAWinApp.UserControls
                     SelectCommand = mysqlcom
                 };
 
-                mysqlcom.ExecuteNonQuery();   
+                mysqlcom.ExecuteNonQuery();
 
                 dbConn.close_db();
             }
@@ -170,13 +168,13 @@ namespace HOAWinApp.UserControls
 
         private void garbAddPayment_Load(object sender, EventArgs e)
         {
-            AutoCompleteStringCollection strCol = loadDataAutoComp("SELECT CONCAT_WS(\",\", lName, fName) as 'wName' from garbcoldata ORDER BY wName ASC;");
+            AutoCompleteStringCollection strCol = loadDataAutoComp("SELECT NAME as 'wName' from watercoldata ORDER BY wName ASC;");
 
             clientNameTB.AutoCompleteCustomSource = strCol;
             clientNameTB.AutoCompleteSource = AutoCompleteSource.CustomSource;
             clientNameTB.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
-            clientNameTB.Text = "Last Name, First Name";
+            clientNameTB.Text = "";
             clientNameTB.ForeColor = Color.Gray;
             dtpGarbHist.Text = DateTime.Now.ToShortDateString();
         }
@@ -196,7 +194,7 @@ namespace HOAWinApp.UserControls
             {
                 clientNameTB.Text = "Last Name, First Name";
                 clientNameTB.ForeColor = Color.Gray;
-            } 
+            }
         }
 
         private void insertHistData(string strQuer)
@@ -226,47 +224,96 @@ namespace HOAWinApp.UserControls
 
         private void subBut_Click(object sender, EventArgs e)
         {
-            
+
             DialogResult result = MessageBox.Show("Do you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(result == DialogResult.Yes) 
+            if (result == DialogResult.Yes)
             {
-                transType = "Add Payment for Garbage Collection";
+                transType = "Add Payment for Water Collection";
                 DateTime currentDate = DateTime.Now;
-                AutoCompleteStringCollection strCol = loadDataAutoComp("SELECT CONCAT_WS(\",\", lName, fName) as 'wName' from garbcoldata ORDER BY wName ASC;");
+                AutoCompleteStringCollection strCol = loadDataAutoComp("SELECT NAME as 'wName' from watercoldata ORDER BY wName ASC;");
 
-                string[] divName = clientNameTB.Text.Split(',');
-                if (clientNameTB.Text != "" && remCBox.Text != "")
+                string divName = clientNameTB.Text;
+                if (clientNameTB.Text != "")
                 {
                     if (strCol.Contains(clientNameTB.Text))
                     {
                         try
                         {
                             double payAmount = Convert.ToDouble(payAmTB.Text);
-                            if (payAmount > 0)
-                            {
-                                string promRem = getPromRem("SELECT promRemarks FROM garbcoldata WHERE fName = '" + divName[1] + "' and lName='" + divName[0] + "';");
-                                double cDueDoub = getDoubData("SELECT cDue FROM garbcoldata WHERE fName = '" + divName[1] + "' and lName='" + divName[0] + "';");
-                                double totalPaid = getDoubData("SELECT totPaid FROM garbcoldata WHERE fName = '" + divName[1] + "' and lName='" + divName[0] + "';");
-                                double newCDue = cDueDoub - payAmount;
-                                double newTotPaid = totalPaid + payAmount;
-                                UpData("UPDATE garbcoldata SET pDue = " + cDueDoub + " WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
-                                UpData("UPDATE garbcoldata SET cDue = " + newCDue + " WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
-                                UpData("UPDATE garbcoldata SET totPaid = " + newTotPaid + " WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
-                                UpData("UPDATE garbcoldata SET payRemarks = 'Paid' WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
 
-                                if (promCBox.Checked)
+                            //collect previous reading
+                            //collect current reading
+                            //water payment details
+                            //0-10 current due = 350 amount due
+                            //10.1-20 current due = 350 + 40 amount due
+                            //20.1-30 current due = 350 + 45 amount due
+                            //30.1-40 current due = 350 + 70 amount due
+                            //40.1< current due = 350 + 80 amount due
+
+                            if(payAmount >= 0)
+                            {
+
+                                //get divName current total reading
+                                double currentTotalReading = getDoubData("SELECT CURRENT FROM watercoldata WHERE NAME = '" + divName + "';");
+                                //get divName amount due
+                                double AmountDue = getDoubData("SELECT AMTDUE FROM watercoldata WHERE NAME = '" + divName + "';"); 
+                                if (AmountDue >= 0 /*&& payAmount == AmountDue*/)
                                 {
-                                    UpData("UPDATE garbcoldata SET promRemarks = 'YES' WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
+                                    double newAmountDue = AmountDue + payAmount;
+                                    //update amount due
+                                    UpData("UPDATE watercoldata SET AMTDUE = " + newAmountDue + " WHERE NAME = '" + divName + "';");              
+                                    //updated previous based on current
+                                    UpData("UPDATE watercoldata SET PREVIOUS = " + currentTotalReading + " WHERE NAME = '" + divName + "';");
+                                    //update current into 0
+                                    UpData("UPDATE watercoldata SET CURRENT = " + 0 + " WHERE NAME = '" + divName + "';");
+                                    //update reading into 0
+                                    UpData("UPDATE watercoldata SET READING = " + 0 + " WHERE NAME = '" + divName + "';");
+                                    
+                                    //if newAmountDue = 0 then set the status to BALANCE PAID
+                                    if(newAmountDue == 0)
+                                    {
+                                        UpData("UPDATE watercoldata SET STATUS = '" + "BALANCE PAID" + "' WHERE NAME = '" + divName + "';");
+                                    }
+                                    else
+                                    {
+                                        UpData("UPDATE watercoldata SET STATUS = '" + "PLEASE PAY YOUR BILLS ON TIME" + "' WHERE NAME = '" + divName + "';");
+                                    }
+
+                                    //add to history
+                                    insertHistData("INSERT INTO watercollhist(dateTimeStamp, fName, amPaid, transDate) VALUES('" + currentDate.ToString("yyyy-MM-dd HH:ss") + "', '" + clientNameTB.Text + "', " + payAmount + ", '" + dtpGarbHist.Text + "');");
+                                    /*insertHistData("INSERT INTO overalltransachist(dateTimeStamp, transType, fullName, payAmount, transDate) VALUES('" + currentDate.ToString("yyyy-MM-dd HH:ss") + "', '" + transType + "', '" + clientNameTB.Text + "', " + payAmount + ", '" + dtpGarbHist.Text + ";");*/
                                 }
 
-                                if (payAmount >= 400 || totalPaid >= 400)
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid Amount. Please Try Again!", "INVALID AMOUNT", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+
+
+
+
+                            /*if (payAmount > 0)
+                            {
+                                //string promRem = getPromRem("SELECT promRemarks FROM garbcoldata WHERE fName = '" + divName[1] + "' and lName='" + divName[0] + "';");
+                                double AmountDue = getDoubData("SELECT AMTDUE FROM watercoldata WHERE fName = '" + divName + "';");
+                                //double totalPaid = getDoubData("SELECT totPaid FROM garbcoldata WHERE fName = '" + divName[1] + "' and lName='" + divName[0] + "';");
+                                double newAmountDue = AmountDue - payAmount;
+                                //double newTotPaid = totalPaid + payAmount;
+                                //UpData("UPDATE garbcoldata SET pDue = " + AmountDue + " WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
+                                UpData("UPDATE garbcoldata SET AMTDUE = " + newAmountDue + " WHERE fName = '" + divName + "';");
+                                //UpData("UPDATE garbcoldata SET totPaid = " + newTotPaid + " WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
+                                //UpData("UPDATE garbcoldata SET payRemarks = 'Paid' WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
+
+                                if (payAmount >= 400) //|| totalPaid >= 400)
                                 {
                                     UpData("UPDATE garbcoldata SET dueDate = DATE_ADD(dueDate, INTERVAL 1 MONTH) WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
                                 }
 
 
-                                if (newCDue < 1200)
+                                if (AmountDue < 1200)
                                 {
                                     UpData("UPDATE garbcoldata SET colRemarks = 'For Collection' WHERE fName = '" + divName[1] + "' AND lName = '" + divName[0] + "';");
                                     insertHistData("INSERT INTO garbcollhist(dateTimeStamp, fName, amPaid, transDate, payRem, colRem) VALUES('" + currentDate.ToString("yyyy-MM-dd HH:ss") + "', '" + clientNameTB.Text + "', " + payAmount + ", '" + dtpGarbHist.Text + "', '" + remCBox.Text + "', 'For Collection');");
@@ -280,12 +327,12 @@ namespace HOAWinApp.UserControls
                                 }
 
                                 MessageBox.Show("PAYMENT SUBMITTED!", "PAYMENT SUCCESSFUL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                generateReceipt(divName[1], divName[0]);
+                                generateReceipt(divName);
                             }
                             else
                             {
                                 MessageBox.Show("Invalid Amount. Please Try Again!", "INVALID AMOUNT", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
+                            }*/
                             clientNameTB.Text = "";
                             payAmTB.Text = "";
                             dtpGarbHist.Text = DateTime.Now.ToShortDateString();
@@ -321,21 +368,11 @@ namespace HOAWinApp.UserControls
                     {
                         addPaymentErrorProvider.SetError(payAmTB, "");
                     }
-
-                    //error message for remarks cb
-                    if (string.IsNullOrWhiteSpace(remCBox.Text))
-                    {
-                        addPaymentErrorProvider.SetError(remCBox, "This field cannot be empty");
-                    }
-                    else
-                    {
-                        addPaymentErrorProvider.SetError(remCBox, "");
-                    }
                 }
             }
         }
 
-        private void generateReceipt(string fName, string lName)
+        private void generateReceipt(string divName)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Word Document (*.docx)|*.docx";
@@ -344,58 +381,21 @@ namespace HOAWinApp.UserControls
 
             if (!string.IsNullOrEmpty(saveFileDialog.FileName))
             {
-                // Assuming the following variables are defined elsewhere in your code:
-                // string fName = "John"; 
-                // string lName = "Doe";
-                // string item = "HOA Fees for May 2024";
-                float amount =  float.Parse(payAmTB.Text);
-
                 // Create a new document
                 using (DocX document = DocX.Create(saveFileDialog.FileName))
                 {
                     // Add a title
-                    document.InsertParagraph("Homeowners Association Fee Receipt")
+                    document.InsertParagraph("Receipt")
                         .FontSize(20)
                         .Bold()
                         .Alignment = Alignment.center;
 
-                    // Add date and time
-                    document.InsertParagraph("Date: " + DateTime.Now.ToShortDateString())
-                        .FontSize(12)
-                        .SpacingAfter(10);
-                    document.InsertParagraph("Time: " + DateTime.Now.ToShortTimeString())
-                        .FontSize(12)
-                        .SpacingAfter(20);
-
-                    // Add homeowner information
-                    document.InsertParagraph("Customer Information")
-                        .FontSize(14)
-                        .Bold()
-                        .SpacingAfter(10);
-                    document.InsertParagraph("Name: " + fName + " " + lName)
-                        .FontSize(12)
-                        .SpacingAfter(20);
-
-                    // Add payment information
-                    document.InsertParagraph("Payment Details")
-                        .FontSize(14)
-                        .Bold()
-                        .SpacingAfter(10);
-                    document.InsertParagraph("Price: " + amount.ToString("F2") + " PESOS")
-                        .FontSize(12)
-                        .SpacingAfter(20);
-
-                    // Add footer with thank you note
-                    document.InsertParagraph("Thank you for your payment!")
-                        .FontSize(12)
-                        .Italic()
-                        .SpacingAfter(10)
-                        .Alignment = Alignment.center;
-                        
-                    document.InsertParagraph("If you have any questions, please contact us at (CONTACT NUMBER) or email support@hoa.com.")
-                        .FontSize(10)
-                        .SpacingAfter(5)
-                        .Alignment = Alignment.center;
+                    // Add some information
+                    document.InsertParagraph("Date: " + DateTime.Now.ToShortDateString());
+                    document.InsertParagraph("Time: " + DateTime.Now.ToShortTimeString());
+                    document.InsertParagraph("Customer Name: " + divName + " ");
+                    document.InsertParagraph("Item: Product Name");
+                    document.InsertParagraph("Price: $10.00");
 
                     // Save the document
                     document.Save();
@@ -421,14 +421,5 @@ namespace HOAWinApp.UserControls
             payAmTB.SelectionStart = payAmTB.Text.Length;
         }
 
-        private void clientNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void clientNameTB_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

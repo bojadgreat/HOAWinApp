@@ -51,6 +51,7 @@
             this.addPaymentBotPanel.Name = "addPaymentBotPanel";
             this.addPaymentBotPanel.Size = new System.Drawing.Size(400, 200);
             this.addPaymentBotPanel.TabIndex = 1;
+            this.addPaymentBotPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addPaymentBotPanel_Paint);
             // 
             // AddPayment
             // 

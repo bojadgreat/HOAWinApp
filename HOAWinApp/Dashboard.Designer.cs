@@ -82,6 +82,7 @@
             this.topLabel.Size = new System.Drawing.Size(261, 29);
             this.topLabel.TabIndex = 1;
             this.topLabel.Text = "HANIYYAH HOMES";
+            this.topLabel.Click += new System.EventHandler(this.topLabel_Click);
             // 
             // pictureBox1
             // 

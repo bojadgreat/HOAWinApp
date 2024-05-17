@@ -122,5 +122,10 @@ namespace HOAWinApp
         {
             newRefreshDueDate();
         }
+
+        private void topLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
