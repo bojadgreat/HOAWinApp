@@ -344,21 +344,58 @@ namespace HOAWinApp.UserControls
 
             if (!string.IsNullOrEmpty(saveFileDialog.FileName))
             {
+                // Assuming the following variables are defined elsewhere in your code:
+                // string fName = "John"; 
+                // string lName = "Doe";
+                // string item = "HOA Fees for May 2024";
+                float amount =  float.Parse(payAmTB.Text);
+
                 // Create a new document
                 using (DocX document = DocX.Create(saveFileDialog.FileName))
                 {
                     // Add a title
-                    document.InsertParagraph("Receipt")
+                    document.InsertParagraph("Homeowners Association Fee Receipt")
                         .FontSize(20)
                         .Bold()
                         .Alignment = Alignment.center;
 
-                    // Add some information
-                    document.InsertParagraph("Date: " + DateTime.Now.ToShortDateString());
-                    document.InsertParagraph("Time: " + DateTime.Now.ToShortTimeString());
-                    document.InsertParagraph("Customer Name: " + fName + " " + lName);
-                    document.InsertParagraph("Item: Product Name");
-                    document.InsertParagraph("Price: $10.00");
+                    // Add date and time
+                    document.InsertParagraph("Date: " + DateTime.Now.ToShortDateString())
+                        .FontSize(12)
+                        .SpacingAfter(10);
+                    document.InsertParagraph("Time: " + DateTime.Now.ToShortTimeString())
+                        .FontSize(12)
+                        .SpacingAfter(20);
+
+                    // Add homeowner information
+                    document.InsertParagraph("Customer Information")
+                        .FontSize(14)
+                        .Bold()
+                        .SpacingAfter(10);
+                    document.InsertParagraph("Name: " + fName + " " + lName)
+                        .FontSize(12)
+                        .SpacingAfter(20);
+
+                    // Add payment information
+                    document.InsertParagraph("Payment Details")
+                        .FontSize(14)
+                        .Bold()
+                        .SpacingAfter(10);
+                    document.InsertParagraph("Price: " + amount.ToString("F2") + " PESOS")
+                        .FontSize(12)
+                        .SpacingAfter(20);
+
+                    // Add footer with thank you note
+                    document.InsertParagraph("Thank you for your payment!")
+                        .FontSize(12)
+                        .Italic()
+                        .SpacingAfter(10)
+                        .Alignment = Alignment.center;
+                        
+                    document.InsertParagraph("If you have any questions, please contact us at (CONTACT NUMBER) or email support@hoa.com.")
+                        .FontSize(10)
+                        .SpacingAfter(5)
+                        .Alignment = Alignment.center;
 
                     // Save the document
                     document.Save();

@@ -31,6 +31,7 @@
             this.dgvGarbHist = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.garbHistTB = new System.Windows.Forms.TextBox();
+            this.garbHistExpBut = new System.Windows.Forms.Button();
             this.garbHistRelBut = new System.Windows.Forms.Button();
             this.garbHistSearchBut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGarbHist)).BeginInit();
@@ -59,20 +60,31 @@
             // 
             // garbHistTB
             // 
-            this.garbHistTB.Location = new System.Drawing.Point(181, 46);
+            this.garbHistTB.Location = new System.Drawing.Point(262, 46);
             this.garbHistTB.Name = "garbHistTB";
-            this.garbHistTB.Size = new System.Drawing.Size(302, 20);
+            this.garbHistTB.Size = new System.Drawing.Size(221, 20);
             this.garbHistTB.TabIndex = 2;
             this.garbHistTB.Enter += new System.EventHandler(this.garbSearchTB_Enter);
             this.garbHistTB.Leave += new System.EventHandler(this.garbSearchTB_Leave);
             // 
+            // garbHistExpBut
+            // 
+            this.garbHistExpBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.garbHistExpBut.Location = new System.Drawing.Point(19, 44);
+            this.garbHistExpBut.Name = "garbHistExpBut";
+            this.garbHistExpBut.Size = new System.Drawing.Size(75, 23);
+            this.garbHistExpBut.TabIndex = 3;
+            this.garbHistExpBut.Text = "EXPORT";
+            this.garbHistExpBut.UseVisualStyleBackColor = true;
+            this.garbHistExpBut.Click += new System.EventHandler(this.garbHistExpBut_Click);
+            // 
             // garbHistRelBut
             // 
             this.garbHistRelBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbHistRelBut.Location = new System.Drawing.Point(19, 44);
+            this.garbHistRelBut.Location = new System.Drawing.Point(100, 44);
             this.garbHistRelBut.Name = "garbHistRelBut";
             this.garbHistRelBut.Size = new System.Drawing.Size(75, 23);
-            this.garbHistRelBut.TabIndex = 3;
+            this.garbHistRelBut.TabIndex = 4;
             this.garbHistRelBut.Text = "REFRESH";
             this.garbHistRelBut.UseVisualStyleBackColor = true;
             this.garbHistRelBut.Click += new System.EventHandler(this.garbHistRelBut_Click);
@@ -80,10 +92,10 @@
             // garbHistSearchBut
             // 
             this.garbHistSearchBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbHistSearchBut.Location = new System.Drawing.Point(100, 44);
+            this.garbHistSearchBut.Location = new System.Drawing.Point(181, 44);
             this.garbHistSearchBut.Name = "garbHistSearchBut";
             this.garbHistSearchBut.Size = new System.Drawing.Size(75, 23);
-            this.garbHistSearchBut.TabIndex = 4;
+            this.garbHistSearchBut.TabIndex = 5;
             this.garbHistSearchBut.Text = "SEARCH";
             this.garbHistSearchBut.UseVisualStyleBackColor = true;
             this.garbHistSearchBut.Click += new System.EventHandler(this.garbHistSearchBut_Click);
@@ -95,6 +107,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(108)))), ((int)(((byte)(85)))));
             this.Controls.Add(this.garbHistSearchBut);
             this.Controls.Add(this.garbHistRelBut);
+            this.Controls.Add(this.garbHistExpBut);
             this.Controls.Add(this.garbHistTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvGarbHist);
@@ -112,6 +125,7 @@
         private System.Windows.Forms.DataGridView dgvGarbHist;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox garbHistTB;
+        private System.Windows.Forms.Button garbHistExpBut;
         private System.Windows.Forms.Button garbHistRelBut;
         private System.Windows.Forms.Button garbHistSearchBut;
     }
