@@ -21,7 +21,9 @@ namespace HOAWinApp.UserControls
 
         private void postPaymentWBut_Click(object sender, EventArgs e)
         {
-
+            var postPayForm = new Winforms.AddWaterPayment();
+            postPayForm.Show();
+            postPayForm.FormClosed += (s, ev) => reloadData();
         }
 
         private void loadColData(string strQuer, DataGridView dgv)
@@ -157,6 +159,12 @@ namespace HOAWinApp.UserControls
             var updateForm = new Winforms.WaterUpdateForm();
             updateForm.Show();
             updateForm.FormClosed += (s, ev) => reloadData();
+        }
+
+        private void histWBut_Click(object sender, EventArgs e)
+        {
+            var histForm = new Winforms.DisplayWaterHistory();
+            histForm.Show();
         }
     }
 }

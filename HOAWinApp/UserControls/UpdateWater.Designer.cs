@@ -52,6 +52,7 @@
             this.curReadingTB.Name = "curReadingTB";
             this.curReadingTB.Size = new System.Drawing.Size(169, 20);
             this.curReadingTB.TabIndex = 4;
+            this.curReadingTB.TextChanged += new System.EventHandler(this.curReadingTB_TextChanged);
             this.curReadingTB.Enter += new System.EventHandler(this.curReadingTB_Enter);
             this.curReadingTB.Leave += new System.EventHandler(this.curReadingTB_Leave);
             // 

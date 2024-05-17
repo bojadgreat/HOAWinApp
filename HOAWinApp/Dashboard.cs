@@ -148,5 +148,10 @@ namespace HOAWinApp
             UserControls.Home homeUC = new UserControls.Home();
             addUserControl(homeUC);
         }
+
+        private void topLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
