@@ -49,14 +49,14 @@
             this.addPaymentBotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addPaymentBotPanel.Location = new System.Drawing.Point(0, 20);
             this.addPaymentBotPanel.Name = "addPaymentBotPanel";
-            this.addPaymentBotPanel.Size = new System.Drawing.Size(400, 200);
+            this.addPaymentBotPanel.Size = new System.Drawing.Size(400, 246);
             this.addPaymentBotPanel.TabIndex = 1;
             // 
             // AddPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 220);
+            this.ClientSize = new System.Drawing.Size(400, 266);
             this.Controls.Add(this.addPaymentBotPanel);
             this.Controls.Add(this.addPaymentTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

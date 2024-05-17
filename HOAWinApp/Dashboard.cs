@@ -26,6 +26,8 @@ namespace HOAWinApp
             addUserControl(homeUC);
         }
 
+
+
         private void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
@@ -39,23 +41,6 @@ namespace HOAWinApp
             this.Close();
         }
 
-        private void homeButt_Click(object sender, EventArgs e)
-        {
-            UserControls.Home homeUC = new UserControls.Home();
-            addUserControl(homeUC);
-        }
-
-        private void gcButt_Click(object sender, EventArgs e)
-        {
-            UserControls.GarbageCollection gcUC = new UserControls.GarbageCollection();
-            addUserControl(gcUC);
-        }
-
-        private void wcButt_Click(object sender, EventArgs e)
-        {
-            UserControls.WaterCollection wcUC = new UserControls.WaterCollection();
-            addUserControl(wcUC);
-        }
 
         private void clientButt_Click(object sender, EventArgs e)
         {
@@ -121,6 +106,47 @@ namespace HOAWinApp
         private void Dashboard_Load(object sender, EventArgs e)
         {
             newRefreshDueDate();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mainContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void homeButt_Click_Click(object sender, EventArgs e)
+        {
+            UserControls.Home homeUC = new UserControls.Home();
+            addUserControl(homeUC);
+        }
+
+        private void gcButt_Click(object sender, EventArgs e)
+        {
+            UserControls.GarbageCollection gcUC = new UserControls.GarbageCollection();
+            addUserControl(gcUC);
+        }
+
+        private void wcButt_Click(object sender, EventArgs e)
+        {
+            UserControls.WaterCollection wcUC = new UserControls.WaterCollection();
+            addUserControl(wcUC);
+        }
+
+        private void clientButt_Click_1(object sender, EventArgs e)
+        {
+            UserControls.Clients clientUC = new UserControls.Clients();
+            addUserControl(clientUC);
+        }
+
+
+        private void homeButt_Click(object sender, EventArgs e)
+        {
+            UserControls.Home homeUC = new UserControls.Home();
+            addUserControl(homeUC);
         }
     }
 }

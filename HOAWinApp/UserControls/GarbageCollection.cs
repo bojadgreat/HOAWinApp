@@ -112,12 +112,6 @@ namespace HOAWinApp.UserControls
             }
         }
 
-        private void postPaymentGBut_Click(object sender, EventArgs e)
-        {
-            var postPayForm = new Winforms.AddPayment();
-            postPayForm.Show();
-            postPayForm.FormClosed += (s, ev) => reloadData();
-        }
 
         private void garbSearchBut_Click(object sender, EventArgs e)
         {
@@ -198,12 +192,6 @@ namespace HOAWinApp.UserControls
             reloadData();
         }
 
-        private void histGBut_Click(object sender, EventArgs e)
-        {
-            var histForm = new Winforms.History();
-            histForm.Show();
-        }
-
         private void generateExGBut_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -259,6 +247,37 @@ namespace HOAWinApp.UserControls
                 }
             }
             
+        }
+
+        private void garbSearchTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generateExGBut_Click_1(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Excel Workbook (*.xlsx)|*.xlsx";
+            saveFileDialog1.Title = "Export to Excel";
+            saveFileDialog1.ShowDialog();
+
+            if (saveFileDialog1.FileName != "")
+            {
+                ExportToExcel(saveFileDialog1.FileName);
+            }
+        }
+
+        private void postPaymentGBut_Click(object sender, EventArgs e)
+        {
+            var postPayForm = new Winforms.AddPayment();
+            postPayForm.Show();
+            postPayForm.FormClosed += (s, ev) => reloadData();
+        }
+
+        private void histGBut_Click_1(object sender, EventArgs e)
+        {
+            var histForm = new Winforms.History();
+            histForm.Show();
         }
     }
 }

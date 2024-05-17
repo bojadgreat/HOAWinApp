@@ -420,5 +420,15 @@ namespace HOAWinApp.UserControls
 
             payAmTB.SelectionStart = payAmTB.Text.Length;
         }
+
+        private void clientNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void promCBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
