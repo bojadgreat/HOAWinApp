@@ -53,7 +53,7 @@
             this.homeLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.homeLeftPanel.Location = new System.Drawing.Point(0, 0);
             this.homeLeftPanel.Name = "homeLeftPanel";
-            this.homeLeftPanel.Size = new System.Drawing.Size(170, 421);
+            this.homeLeftPanel.Size = new System.Drawing.Size(169, 698);
             this.homeLeftPanel.TabIndex = 3;
             // 
             // histGBut
@@ -110,13 +110,13 @@
             this.homeRightPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.homeRightPanel.Location = new System.Drawing.Point(169, 0);
             this.homeRightPanel.Name = "homeRightPanel";
-            this.homeRightPanel.Size = new System.Drawing.Size(815, 421);
+            this.homeRightPanel.Size = new System.Drawing.Size(1197, 698);
             this.homeRightPanel.TabIndex = 2;
             // 
             // garbRelBut
             // 
             this.garbRelBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbRelBut.Location = new System.Drawing.Point(718, 58);
+            this.garbRelBut.Location = new System.Drawing.Point(1098, 58);
             this.garbRelBut.Name = "garbRelBut";
             this.garbRelBut.Size = new System.Drawing.Size(79, 27);
             this.garbRelBut.TabIndex = 6;
@@ -127,7 +127,7 @@
             // garbSearchBut
             // 
             this.garbSearchBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbSearchBut.Location = new System.Drawing.Point(632, 58);
+            this.garbSearchBut.Location = new System.Drawing.Point(1013, 58);
             this.garbSearchBut.Name = "garbSearchBut";
             this.garbSearchBut.Size = new System.Drawing.Size(79, 27);
             this.garbSearchBut.TabIndex = 5;
@@ -139,10 +139,10 @@
             // 
             this.garbSearchTB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.garbSearchTB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.garbSearchTB.Location = new System.Drawing.Point(20, 58);
+            this.garbSearchTB.Location = new System.Drawing.Point(644, 58);
             this.garbSearchTB.Multiline = true;
             this.garbSearchTB.Name = "garbSearchTB";
-            this.garbSearchTB.Size = new System.Drawing.Size(606, 27);
+            this.garbSearchTB.Size = new System.Drawing.Size(363, 27);
             this.garbSearchTB.TabIndex = 4;
             this.garbSearchTB.TextChanged += new System.EventHandler(this.garbSearchTB_TextChanged);
             this.garbSearchTB.Enter += new System.EventHandler(this.garbSearchTB_Enter);
@@ -158,7 +158,7 @@
             this.garbagecoltable.Name = "garbagecoltable";
             this.garbagecoltable.ReadOnly = true;
             this.garbagecoltable.RowHeadersWidth = 30;
-            this.garbagecoltable.Size = new System.Drawing.Size(777, 311);
+            this.garbagecoltable.Size = new System.Drawing.Size(1157, 587);
             this.garbagecoltable.TabIndex = 2;
             // 
             // homeLabel
@@ -168,7 +168,7 @@
             this.homeLabel.Font = new System.Drawing.Font("Myanmar Text", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeLabel.Location = new System.Drawing.Point(123, 73);
             this.homeLabel.Name = "homeLabel";
-            this.homeLabel.Size = new System.Drawing.Size(567, 48);
+            this.homeLabel.Size = new System.Drawing.Size(949, 48);
             this.homeLabel.TabIndex = 0;
             this.homeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -179,7 +179,7 @@
             this.Controls.Add(this.homeLeftPanel);
             this.Controls.Add(this.homeRightPanel);
             this.Name = "GarbageCollection";
-            this.Size = new System.Drawing.Size(984, 421);
+            this.Size = new System.Drawing.Size(1366, 698);
             this.Load += new System.EventHandler(this.GarbageCollection_Load);
             this.homeLeftPanel.ResumeLayout(false);
             this.homeRightPanel.ResumeLayout(false);

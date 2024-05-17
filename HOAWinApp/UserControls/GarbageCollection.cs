@@ -41,14 +41,14 @@ namespace HOAWinApp.UserControls
             dgvSetWidthColumn(50, 0, garbagecoltable);
             dgvSetWidthColumn(50, 1, garbagecoltable);
             dgvSetWidthColumn(50, 2, garbagecoltable);
-            dgvSetWidthColumn(90, 3, garbagecoltable);
-            dgvSetWidthColumn(90, 4, garbagecoltable);
-            dgvSetWidthColumn(60, 5, garbagecoltable);
-            dgvSetWidthColumn(60, 6, garbagecoltable);
-            dgvSetWidthColumn(60, 7, garbagecoltable);
+            dgvSetWidthColumn(120, 3, garbagecoltable);
+            dgvSetWidthColumn(120, 4, garbagecoltable);
+            dgvSetWidthColumn(100, 5, garbagecoltable);
+            dgvSetWidthColumn(100, 6, garbagecoltable);
+            dgvSetWidthColumn(100, 7, garbagecoltable);
             dgvSetWidthColumn(100, 8, garbagecoltable);
-            dgvSetWidthColumn(70, 9, garbagecoltable);
-            dgvSetWidthColumn(70, 10, garbagecoltable);
+            dgvSetWidthColumn(150, 9, garbagecoltable);
+            dgvSetWidthColumn(100, 10, garbagecoltable);
             dgvSetWidthColumn(70, 11, garbagecoltable);
 
             garbSearchTB.Text = "Enter Client Information";
@@ -136,16 +136,15 @@ namespace HOAWinApp.UserControls
             dgvSetWidthColumn(50, 0, garbagecoltable);
             dgvSetWidthColumn(50, 1, garbagecoltable);
             dgvSetWidthColumn(50, 2, garbagecoltable);
-            dgvSetWidthColumn(90, 3, garbagecoltable);
-            dgvSetWidthColumn(90, 4, garbagecoltable);
-            dgvSetWidthColumn(60, 5, garbagecoltable);
-            dgvSetWidthColumn(60, 6, garbagecoltable);
-            dgvSetWidthColumn(60, 7, garbagecoltable);
+            dgvSetWidthColumn(120, 3, garbagecoltable);
+            dgvSetWidthColumn(120, 4, garbagecoltable);
+            dgvSetWidthColumn(100, 5, garbagecoltable);
+            dgvSetWidthColumn(100, 6, garbagecoltable);
+            dgvSetWidthColumn(100, 7, garbagecoltable);
             dgvSetWidthColumn(100, 8, garbagecoltable);
-            dgvSetWidthColumn(70, 9, garbagecoltable);
-            dgvSetWidthColumn(70, 10, garbagecoltable);
+            dgvSetWidthColumn(150, 9, garbagecoltable);
+            dgvSetWidthColumn(100, 10, garbagecoltable);
             dgvSetWidthColumn(70, 11, garbagecoltable);
-            dgvSetWidthColumn(70, 10, garbagecoltable);
 
             garbSearchTB.Text = "Enter Client Information";
             garbSearchTB.ForeColor = Color.Gray;
@@ -173,14 +172,14 @@ namespace HOAWinApp.UserControls
             dgvSetWidthColumn(50, 0, garbagecoltable);
             dgvSetWidthColumn(50, 1, garbagecoltable);
             dgvSetWidthColumn(50, 2, garbagecoltable);
-            dgvSetWidthColumn(90, 3, garbagecoltable);
-            dgvSetWidthColumn(90, 4, garbagecoltable);
-            dgvSetWidthColumn(60, 5, garbagecoltable);
-            dgvSetWidthColumn(60, 6, garbagecoltable);
-            dgvSetWidthColumn(60, 7, garbagecoltable);
+            dgvSetWidthColumn(120, 3, garbagecoltable);
+            dgvSetWidthColumn(120, 4, garbagecoltable);
+            dgvSetWidthColumn(100, 5, garbagecoltable);
+            dgvSetWidthColumn(100, 6, garbagecoltable);
+            dgvSetWidthColumn(100, 7, garbagecoltable);
             dgvSetWidthColumn(100, 8, garbagecoltable);
-            dgvSetWidthColumn(70, 9, garbagecoltable);
-            dgvSetWidthColumn(70, 10, garbagecoltable);
+            dgvSetWidthColumn(150, 9, garbagecoltable);
+            dgvSetWidthColumn(100, 10, garbagecoltable);
             dgvSetWidthColumn(70, 11, garbagecoltable);
 
             garbSearchTB.Text = "Enter Client Information";

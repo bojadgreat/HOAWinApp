@@ -16,7 +16,7 @@ using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace HOAWinApp
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard : UserControl
     {
         bool mouseClicked = false;
         public Dashboard()
@@ -38,7 +38,6 @@ namespace HOAWinApp
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            this.Close();
         }
 
 
@@ -59,7 +58,6 @@ namespace HOAWinApp
             {
                 int mousex = MousePosition.X - 492;
                 int mousey = MousePosition.Y - 35;
-                this.SetDesktopLocation(mousex, mousey);
             }
         }
         //draggable

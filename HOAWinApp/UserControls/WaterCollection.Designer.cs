@@ -54,17 +54,17 @@
             this.waterColRightPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.waterColRightPanel.Location = new System.Drawing.Point(169, 0);
             this.waterColRightPanel.Name = "waterColRightPanel";
-            this.waterColRightPanel.Size = new System.Drawing.Size(815, 421);
+            this.waterColRightPanel.Size = new System.Drawing.Size(1197, 698);
             this.waterColRightPanel.TabIndex = 0;
             // 
             // watSearchTB
             // 
             this.watSearchTB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.watSearchTB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.watSearchTB.Location = new System.Drawing.Point(20, 58);
+            this.watSearchTB.Location = new System.Drawing.Point(688, 58);
             this.watSearchTB.Multiline = true;
             this.watSearchTB.Name = "watSearchTB";
-            this.watSearchTB.Size = new System.Drawing.Size(606, 30);
+            this.watSearchTB.Size = new System.Drawing.Size(294, 30);
             this.watSearchTB.TabIndex = 9;
             this.watSearchTB.Enter += new System.EventHandler(this.watSearchTB_Enter);
             this.watSearchTB.Leave += new System.EventHandler(this.watSearchTB_Leave);
@@ -72,7 +72,7 @@
             // watSearchBut
             // 
             this.watSearchBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watSearchBut.Location = new System.Drawing.Point(632, 58);
+            this.watSearchBut.Location = new System.Drawing.Point(988, 58);
             this.watSearchBut.Name = "watSearchBut";
             this.watSearchBut.Size = new System.Drawing.Size(81, 30);
             this.watSearchBut.TabIndex = 8;
@@ -83,7 +83,7 @@
             // watRelBut
             // 
             this.watRelBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watRelBut.Location = new System.Drawing.Point(718, 58);
+            this.watRelBut.Location = new System.Drawing.Point(1075, 58);
             this.watRelBut.Name = "watRelBut";
             this.watRelBut.Size = new System.Drawing.Size(79, 30);
             this.watRelBut.TabIndex = 7;
@@ -101,8 +101,9 @@
             this.watercoltable.Name = "watercoltable";
             this.watercoltable.ReadOnly = true;
             this.watercoltable.RowHeadersWidth = 30;
-            this.watercoltable.Size = new System.Drawing.Size(777, 305);
+            this.watercoltable.Size = new System.Drawing.Size(1157, 587);
             this.watercoltable.TabIndex = 3;
+            this.watercoltable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.watercoltable_CellContentClick);
             // 
             // waterColLeftPanel
             // 
@@ -112,10 +113,10 @@
             this.waterColLeftPanel.Controls.Add(this.histWBut);
             this.waterColLeftPanel.Controls.Add(this.excelWBut);
             this.waterColLeftPanel.Controls.Add(this.postPaymentWBut);
-            this.waterColLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.waterColLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.waterColLeftPanel.Location = new System.Drawing.Point(0, 0);
             this.waterColLeftPanel.Name = "waterColLeftPanel";
-            this.waterColLeftPanel.Size = new System.Drawing.Size(169, 421);
+            this.waterColLeftPanel.Size = new System.Drawing.Size(169, 698);
             this.waterColLeftPanel.TabIndex = 1;
             // 
             // updateBut
@@ -169,7 +170,7 @@
             this.Controls.Add(this.waterColLeftPanel);
             this.Controls.Add(this.waterColRightPanel);
             this.Name = "WaterCollection";
-            this.Size = new System.Drawing.Size(984, 421);
+            this.Size = new System.Drawing.Size(1366, 698);
             this.Load += new System.EventHandler(this.WaterCollection_Load);
             this.waterColRightPanel.ResumeLayout(false);
             this.waterColRightPanel.PerformLayout();

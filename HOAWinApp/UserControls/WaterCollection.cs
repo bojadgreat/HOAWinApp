@@ -166,5 +166,10 @@ namespace HOAWinApp.UserControls
             var histForm = new Winforms.DisplayWaterHistory();
             histForm.Show();
         }
+
+        private void watercoltable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
