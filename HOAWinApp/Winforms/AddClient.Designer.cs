@@ -34,7 +34,7 @@
             // 
             // addClientTopPanel
             // 
-            this.addClientTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(157)))), ((int)(((byte)(42)))));
+            this.addClientTopPanel.BackColor = System.Drawing.Color.Black;
             this.addClientTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.addClientTopPanel.Location = new System.Drawing.Point(0, 0);
             this.addClientTopPanel.Name = "addClientTopPanel";

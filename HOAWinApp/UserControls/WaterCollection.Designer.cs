@@ -106,7 +106,7 @@
             // 
             // waterColLeftPanel
             // 
-            this.waterColLeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(188)))), ((int)(((byte)(218)))));
+            this.waterColLeftPanel.BackColor = System.Drawing.Color.Transparent;
             this.waterColLeftPanel.BackgroundImage = global::HOAWinApp.Properties.Resources.Untitled_design__7_6;
             this.waterColLeftPanel.Controls.Add(this.updateBut);
             this.waterColLeftPanel.Controls.Add(this.histWBut);

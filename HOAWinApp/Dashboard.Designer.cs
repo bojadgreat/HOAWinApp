@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.mainContainer = new System.Windows.Forms.Panel();
+            this.gcButt = new MetroFramework.Controls.MetroButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.homeButt = new MetroFramework.Controls.MetroButton();
-            this.gcButt = new MetroFramework.Controls.MetroButton();
             this.clientButt = new MetroFramework.Controls.MetroButton();
             this.wcButt = new MetroFramework.Controls.MetroButton();
             this.topPanel = new System.Windows.Forms.Panel();
@@ -53,12 +53,25 @@
             this.mainContainer.TabIndex = 2;
             this.mainContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.mainContainer_Paint);
             // 
+            // gcButt
+            // 
+            this.gcButt.BackColor = System.Drawing.Color.Transparent;
+            this.gcButt.BackgroundImage = global::HOAWinApp.Properties.Resources.WATER_COLLECTION__2_3;
+            this.gcButt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gcButt.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.gcButt.Location = new System.Drawing.Point(243, 0);
+            this.gcButt.Name = "gcButt";
+            this.gcButt.Size = new System.Drawing.Size(246, 70);
+            this.gcButt.TabIndex = 5;
+            this.gcButt.UseSelectable = true;
+            this.gcButt.Click += new System.EventHandler(this.gcButt_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::HOAWinApp.Properties.Resources.dash15;
-            this.panel1.Controls.Add(this.homeButt);
             this.panel1.Controls.Add(this.gcButt);
+            this.panel1.Controls.Add(this.homeButt);
             this.panel1.Controls.Add(this.clientButt);
             this.panel1.Controls.Add(this.wcButt);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -80,19 +93,6 @@
             this.homeButt.TabIndex = 4;
             this.homeButt.UseSelectable = true;
             this.homeButt.Click += new System.EventHandler(this.homeButt_Click);
-            // 
-            // gcButt
-            // 
-            this.gcButt.BackColor = System.Drawing.Color.Transparent;
-            this.gcButt.BackgroundImage = global::HOAWinApp.Properties.Resources.WATER_COLLECTION__2_2;
-            this.gcButt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gcButt.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.gcButt.Location = new System.Drawing.Point(245, 0);
-            this.gcButt.Name = "gcButt";
-            this.gcButt.Size = new System.Drawing.Size(246, 70);
-            this.gcButt.TabIndex = 1;
-            this.gcButt.UseSelectable = true;
-            this.gcButt.Click += new System.EventHandler(this.gcButt_Click);
             // 
             // clientButt
             // 
@@ -188,9 +188,9 @@
         private System.Windows.Forms.Panel mainContainer;
         private System.Windows.Forms.PictureBox pictureBox2;
         private MetroFramework.Controls.MetroButton wcButt;
-        private MetroFramework.Controls.MetroButton gcButt;
         private MetroFramework.Controls.MetroButton clientButt;
         private MetroFramework.Controls.MetroButton homeButt;
+        private MetroFramework.Controls.MetroButton gcButt;
     }
 }
 

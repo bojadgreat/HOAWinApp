@@ -480,6 +480,7 @@
     <None Include="Resources\Generate Excel Report %282%291.png" />
     <None Include="Resources\Generate Excel Report1.png" />
     <None Include="Resources\Generate Excel Report %284%29.png" />
+    <None Include="Resources\Generate Excel Report %284%29.png" />
     <None Include="Resources\Untitled design %287%294.png" />
     <None Include="Resources\WATER COLLECTION DATA.png" />
     <None Include="Resources\Generate Excel Report %283%29.png" />
@@ -497,6 +498,7 @@
     <None Include="Resources\Untitled design %287%291.png" />
     <None Include="Resources\Untitled design %288%29.png" />
     <None Include="Resources\Untitled design %287%29.png" />
+    <None Include="Resources\Untitled design %288%292.png" />
     <None Include="Resources\garbcoll2.png" />
     <None Include="Resources\garbcoll1.png" />
     <None Include="Resources\garbcoll.png" />
@@ -504,8 +506,13 @@
     <None Include="Resources\db3 %282%291.png" />
     <None Include="Resources\db3 %282%29.png" />
     <None Include="Resources\db3.png" />
+    <None Include="Resources\ambot.png" />
+    <None Include="Resources\ambotwabalo.png" />
+    <None Include="Resources\hatdog.png" />
     <None Include="Resources\dashboard header1.png" />
     <None Include="Resources\WATER COLLECTION %281%29.png" />
+    <None Include="Resources\WATER COLLECTION %282%293.png" />
+    <None Include="Resources\WATER COLLECTION %283%292.png" />
     <None Include="Resources\WATER COLLECTION.png" />
     <None Include="Resources\garbageCollection.png" />
     <None Include="Resources\dash15.png" />
