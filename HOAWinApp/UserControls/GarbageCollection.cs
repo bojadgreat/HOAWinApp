@@ -278,5 +278,7 @@ namespace HOAWinApp.UserControls
             var histForm = new Winforms.History();
             histForm.Show();
         }
+
+
     }
 }

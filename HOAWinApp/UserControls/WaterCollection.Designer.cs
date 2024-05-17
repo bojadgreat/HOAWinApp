@@ -61,10 +61,11 @@
             // 
             this.watSearchTB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.watSearchTB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.watSearchTB.Location = new System.Drawing.Point(688, 58);
+            this.watSearchTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.watSearchTB.Location = new System.Drawing.Point(644, 96);
             this.watSearchTB.Multiline = true;
             this.watSearchTB.Name = "watSearchTB";
-            this.watSearchTB.Size = new System.Drawing.Size(294, 30);
+            this.watSearchTB.Size = new System.Drawing.Size(340, 40);
             this.watSearchTB.TabIndex = 9;
             this.watSearchTB.Enter += new System.EventHandler(this.watSearchTB_Enter);
             this.watSearchTB.Leave += new System.EventHandler(this.watSearchTB_Leave);
@@ -72,9 +73,9 @@
             // watSearchBut
             // 
             this.watSearchBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watSearchBut.Location = new System.Drawing.Point(988, 58);
+            this.watSearchBut.Location = new System.Drawing.Point(990, 96);
             this.watSearchBut.Name = "watSearchBut";
-            this.watSearchBut.Size = new System.Drawing.Size(81, 30);
+            this.watSearchBut.Size = new System.Drawing.Size(81, 40);
             this.watSearchBut.TabIndex = 8;
             this.watSearchBut.Text = "SEARCH";
             this.watSearchBut.UseVisualStyleBackColor = true;
@@ -83,9 +84,9 @@
             // watRelBut
             // 
             this.watRelBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watRelBut.Location = new System.Drawing.Point(1075, 58);
+            this.watRelBut.Location = new System.Drawing.Point(1077, 96);
             this.watRelBut.Name = "watRelBut";
-            this.watRelBut.Size = new System.Drawing.Size(79, 30);
+            this.watRelBut.Size = new System.Drawing.Size(79, 40);
             this.watRelBut.TabIndex = 7;
             this.watRelBut.Text = "RELOAD";
             this.watRelBut.UseVisualStyleBackColor = true;
@@ -97,11 +98,11 @@
             this.watercoltable.AllowUserToResizeColumns = false;
             this.watercoltable.AllowUserToResizeRows = false;
             this.watercoltable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.watercoltable.Location = new System.Drawing.Point(20, 97);
+            this.watercoltable.Location = new System.Drawing.Point(20, 152);
             this.watercoltable.Name = "watercoltable";
             this.watercoltable.ReadOnly = true;
             this.watercoltable.RowHeadersWidth = 30;
-            this.watercoltable.Size = new System.Drawing.Size(1157, 587);
+            this.watercoltable.Size = new System.Drawing.Size(1157, 532);
             this.watercoltable.TabIndex = 3;
             this.watercoltable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.watercoltable_CellContentClick);
             // 

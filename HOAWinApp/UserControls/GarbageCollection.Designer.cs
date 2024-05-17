@@ -108,17 +108,17 @@
             this.homeRightPanel.Controls.Add(this.garbagecoltable);
             this.homeRightPanel.Controls.Add(this.homeLabel);
             this.homeRightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.homeRightPanel.Location = new System.Drawing.Point(169, 0);
+            this.homeRightPanel.Location = new System.Drawing.Point(69, 0);
             this.homeRightPanel.Name = "homeRightPanel";
-            this.homeRightPanel.Size = new System.Drawing.Size(1197, 698);
+            this.homeRightPanel.Size = new System.Drawing.Size(1297, 698);
             this.homeRightPanel.TabIndex = 2;
             // 
             // garbRelBut
             // 
             this.garbRelBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbRelBut.Location = new System.Drawing.Point(1098, 58);
+            this.garbRelBut.Location = new System.Drawing.Point(1172, 99);
             this.garbRelBut.Name = "garbRelBut";
-            this.garbRelBut.Size = new System.Drawing.Size(79, 27);
+            this.garbRelBut.Size = new System.Drawing.Size(95, 48);
             this.garbRelBut.TabIndex = 6;
             this.garbRelBut.Text = "RELOAD";
             this.garbRelBut.UseVisualStyleBackColor = true;
@@ -127,9 +127,9 @@
             // garbSearchBut
             // 
             this.garbSearchBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbSearchBut.Location = new System.Drawing.Point(1013, 58);
+            this.garbSearchBut.Location = new System.Drawing.Point(1065, 99);
             this.garbSearchBut.Name = "garbSearchBut";
-            this.garbSearchBut.Size = new System.Drawing.Size(79, 27);
+            this.garbSearchBut.Size = new System.Drawing.Size(92, 48);
             this.garbSearchBut.TabIndex = 5;
             this.garbSearchBut.Text = "SEARCH";
             this.garbSearchBut.UseVisualStyleBackColor = true;
@@ -139,10 +139,11 @@
             // 
             this.garbSearchTB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.garbSearchTB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.garbSearchTB.Location = new System.Drawing.Point(644, 58);
+            this.garbSearchTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.garbSearchTB.Location = new System.Drawing.Point(663, 106);
             this.garbSearchTB.Multiline = true;
             this.garbSearchTB.Name = "garbSearchTB";
-            this.garbSearchTB.Size = new System.Drawing.Size(363, 27);
+            this.garbSearchTB.Size = new System.Drawing.Size(387, 38);
             this.garbSearchTB.TabIndex = 4;
             this.garbSearchTB.TextChanged += new System.EventHandler(this.garbSearchTB_TextChanged);
             this.garbSearchTB.Enter += new System.EventHandler(this.garbSearchTB_Enter);
@@ -154,11 +155,11 @@
             this.garbagecoltable.AllowUserToResizeColumns = false;
             this.garbagecoltable.AllowUserToResizeRows = false;
             this.garbagecoltable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.garbagecoltable.Location = new System.Drawing.Point(20, 91);
+            this.garbagecoltable.Location = new System.Drawing.Point(117, 154);
             this.garbagecoltable.Name = "garbagecoltable";
             this.garbagecoltable.ReadOnly = true;
             this.garbagecoltable.RowHeadersWidth = 30;
-            this.garbagecoltable.Size = new System.Drawing.Size(1157, 587);
+            this.garbagecoltable.Size = new System.Drawing.Size(1157, 524);
             this.garbagecoltable.TabIndex = 2;
             // 
             // homeLabel
@@ -168,7 +169,7 @@
             this.homeLabel.Font = new System.Drawing.Font("Myanmar Text", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeLabel.Location = new System.Drawing.Point(123, 73);
             this.homeLabel.Name = "homeLabel";
-            this.homeLabel.Size = new System.Drawing.Size(949, 48);
+            this.homeLabel.Size = new System.Drawing.Size(1049, 48);
             this.homeLabel.TabIndex = 0;
             this.homeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

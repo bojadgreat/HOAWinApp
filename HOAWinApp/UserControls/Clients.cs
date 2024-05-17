@@ -29,11 +29,11 @@ namespace HOAWinApp.UserControls
             dgvSetHeadTextColumn("Last Name", 3, clientTable);
             dgvSetHeadTextColumn("Current Balance", 4, clientTable);
 
-            dgvSetWidthColumn(130, 0, clientTable);
-            dgvSetWidthColumn(130, 1, clientTable);
-            dgvSetWidthColumn(155, 2, clientTable);
-            dgvSetWidthColumn(156, 3, clientTable);
-            dgvSetWidthColumn(156, 4, clientTable);
+            dgvSetWidthColumn(200, 0, clientTable);
+            dgvSetWidthColumn(200, 1, clientTable);
+            dgvSetWidthColumn(250, 2, clientTable);
+            dgvSetWidthColumn(250, 3, clientTable);
+            dgvSetWidthColumn(250, 4, clientTable);
 
             clientSearchTB.Text = "Enter Client Information";
             clientSearchTB.ForeColor = Color.Gray;
@@ -95,11 +95,11 @@ namespace HOAWinApp.UserControls
             dgvSetHeadTextColumn("Last Name", 3, clientTable);
             dgvSetHeadTextColumn("Current Balance", 4, clientTable);
 
-            dgvSetWidthColumn(130, 0, clientTable);
-            dgvSetWidthColumn(130, 1, clientTable);
-            dgvSetWidthColumn(155, 2, clientTable);
-            dgvSetWidthColumn(156, 3, clientTable);
-            dgvSetWidthColumn(156, 4, clientTable);
+            dgvSetWidthColumn(200, 0, clientTable);
+            dgvSetWidthColumn(200, 1, clientTable);
+            dgvSetWidthColumn(250, 2, clientTable);
+            dgvSetWidthColumn(250, 3, clientTable);
+            dgvSetWidthColumn(250, 4, clientTable);
 
             clientSearchTB.Text = "Enter Client Information";
             clientSearchTB.ForeColor = Color.Gray;
@@ -140,11 +140,11 @@ namespace HOAWinApp.UserControls
             dgvSetHeadTextColumn("Last Name", 3, clientTable);
             dgvSetHeadTextColumn("Current Balance", 4, clientTable);
 
-            dgvSetWidthColumn(130, 0, clientTable);
-            dgvSetWidthColumn(130, 1, clientTable);
-            dgvSetWidthColumn(155, 2, clientTable);
-            dgvSetWidthColumn(156, 3, clientTable);
-            dgvSetWidthColumn(156, 4, clientTable);
+            dgvSetWidthColumn(200, 0, clientTable);
+            dgvSetWidthColumn(200, 1, clientTable);
+            dgvSetWidthColumn(250, 2, clientTable);
+            dgvSetWidthColumn(250, 3, clientTable);
+            dgvSetWidthColumn(250, 4, clientTable);
         }
 
         private void editClientBut_Click(object sender, EventArgs e)
@@ -215,6 +215,8 @@ namespace HOAWinApp.UserControls
                 MessageBox.Show("Database Error");
             }
         }
+
+
 
         //to add history
     }
