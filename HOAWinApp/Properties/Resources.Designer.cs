@@ -63,6 +63,26 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ambot {
+            get {
+                object obj = ResourceManager.GetObject("ambot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ambotwabalo {
+            get {
+                object obj = ResourceManager.GetObject("ambotwabalo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CANCEL {
             get {
                 object obj = ResourceManager.GetObject("CANCEL", resourceCulture);
@@ -443,6 +463,16 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hatdog {
+            get {
+                object obj = ResourceManager.GetObject("hatdog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HOME {
             get {
                 object obj = ResourceManager.GetObject("HOME", resourceCulture);
@@ -476,6 +506,26 @@ namespace HOAWinApp.Properties {
         internal static System.Drawing.Bitmap POST_PAYMENT__2_ {
             get {
                 object obj = ResourceManager.GetObject("POST PAYMENT (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap postPayment {
+            get {
+                object obj = ResourceManager.GetObject("postPayment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap postPayment1 {
+            get {
+                object obj = ResourceManager.GetObject("postPayment1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -583,6 +633,16 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Untitled_design__8_2 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled design (8)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Untitled_design__9_ {
             get {
                 object obj = ResourceManager.GetObject("Untitled design (9)", resourceCulture);
@@ -653,6 +713,16 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap WATER_COLLECTION__2_3 {
+            get {
+                object obj = ResourceManager.GetObject("WATER COLLECTION (2)3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WATER_COLLECTION__3_ {
             get {
                 object obj = ResourceManager.GetObject("WATER COLLECTION (3)", resourceCulture);
@@ -666,6 +736,16 @@ namespace HOAWinApp.Properties {
         internal static System.Drawing.Bitmap WATER_COLLECTION__3_1 {
             get {
                 object obj = ResourceManager.GetObject("WATER COLLECTION (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WATER_COLLECTION__3_2 {
+            get {
+                object obj = ResourceManager.GetObject("WATER COLLECTION (3)2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -269,5 +269,10 @@ namespace HOAWinApp.UserControls
                 }
             }
         }
+
+        private void dgvGarbHist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

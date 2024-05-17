@@ -35,10 +35,10 @@
             // addPaymentTopPanel
             // 
             this.addPaymentTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(157)))), ((int)(((byte)(42)))));
-            this.addPaymentTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addPaymentTopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addPaymentTopPanel.Location = new System.Drawing.Point(0, 0);
             this.addPaymentTopPanel.Name = "addPaymentTopPanel";
-            this.addPaymentTopPanel.Size = new System.Drawing.Size(400, 20);
+            this.addPaymentTopPanel.Size = new System.Drawing.Size(400, 286);
             this.addPaymentTopPanel.TabIndex = 0;
             this.addPaymentTopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.addPaymentTopPanel_MouseDown);
             this.addPaymentTopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.addPaymentTopPanel_MouseMove);
@@ -46,10 +46,9 @@
             // 
             // addPaymentBotPanel
             // 
-            this.addPaymentBotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addPaymentBotPanel.Location = new System.Drawing.Point(0, 20);
+            this.addPaymentBotPanel.Location = new System.Drawing.Point(-1, 20);
             this.addPaymentBotPanel.Name = "addPaymentBotPanel";
-            this.addPaymentBotPanel.Size = new System.Drawing.Size(400, 246);
+            this.addPaymentBotPanel.Size = new System.Drawing.Size(400, 266);
             this.addPaymentBotPanel.TabIndex = 1;
             this.addPaymentBotPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addPaymentBotPanel_Paint);
             // 
@@ -57,13 +56,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 266);
+            this.ClientSize = new System.Drawing.Size(400, 286);
             this.Controls.Add(this.addPaymentBotPanel);
             this.Controls.Add(this.addPaymentTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Payment";
+            this.Load += new System.EventHandler(this.AddPayment_Load);
             this.ResumeLayout(false);
 
         }

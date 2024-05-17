@@ -38,12 +38,12 @@
             // 
             // histTopPanel
             // 
-            this.histTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(157)))), ((int)(((byte)(42)))));
+            this.histTopPanel.BackColor = System.Drawing.Color.Black;
             this.histTopPanel.Controls.Add(this.histPicBoxX);
             this.histTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.histTopPanel.Location = new System.Drawing.Point(0, 0);
             this.histTopPanel.Name = "histTopPanel";
-            this.histTopPanel.Size = new System.Drawing.Size(500, 35);
+            this.histTopPanel.Size = new System.Drawing.Size(714, 31);
             this.histTopPanel.TabIndex = 0;
             this.histTopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.garbHistTopPanel_MouseDown);
             this.histTopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.garbHistTopPanel_MouseMove);
@@ -51,19 +51,19 @@
             // 
             // histBotPanel
             // 
-            this.histBotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.histBotPanel.Location = new System.Drawing.Point(0, 35);
+            this.histBotPanel.Location = new System.Drawing.Point(0, 26);
             this.histBotPanel.Name = "histBotPanel";
-            this.histBotPanel.Size = new System.Drawing.Size(500, 265);
+            this.histBotPanel.Size = new System.Drawing.Size(714, 360);
             this.histBotPanel.TabIndex = 1;
             // 
             // histPicBoxX
             // 
+            this.histPicBoxX.BackColor = System.Drawing.Color.Transparent;
             this.histPicBoxX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.histPicBoxX.Image = ((System.Drawing.Image)(resources.GetObject("histPicBoxX.Image")));
-            this.histPicBoxX.Location = new System.Drawing.Point(467, 6);
+            this.histPicBoxX.Location = new System.Drawing.Point(685, 0);
             this.histPicBoxX.Name = "histPicBoxX";
-            this.histPicBoxX.Size = new System.Drawing.Size(29, 25);
+            this.histPicBoxX.Size = new System.Drawing.Size(34, 28);
             this.histPicBoxX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.histPicBoxX.TabIndex = 0;
             this.histPicBoxX.TabStop = false;
@@ -73,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 300);
+            this.ClientSize = new System.Drawing.Size(714, 360);
             this.Controls.Add(this.histBotPanel);
             this.Controls.Add(this.histTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

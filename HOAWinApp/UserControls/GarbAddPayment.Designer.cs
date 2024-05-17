@@ -116,7 +116,7 @@
             // 
             this.promCBox.AutoSize = true;
             this.promCBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.promCBox.Location = new System.Drawing.Point(135, 200);
+            this.promCBox.Location = new System.Drawing.Point(158, 209);
             this.promCBox.Name = "promCBox";
             this.promCBox.Size = new System.Drawing.Size(149, 17);
             this.promCBox.TabIndex = 7;

@@ -53,5 +53,10 @@ namespace HOAWinApp.Winforms
         {
 
         }
+
+        private void AddPayment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
