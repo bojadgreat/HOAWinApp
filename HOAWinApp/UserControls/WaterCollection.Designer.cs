@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WaterCollection));
             this.waterColRightPanel = new System.Windows.Forms.Panel();
-            this.homeLabel = new System.Windows.Forms.Label();
             this.watSearchTB = new System.Windows.Forms.TextBox();
             this.watSearchBut = new System.Windows.Forms.Button();
             this.watRelBut = new System.Windows.Forms.Button();
@@ -40,17 +38,15 @@
             this.histWBut = new System.Windows.Forms.Button();
             this.excelWBut = new System.Windows.Forms.Button();
             this.postPaymentWBut = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.waterColRightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.watercoltable)).BeginInit();
             this.waterColLeftPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // waterColRightPanel
             // 
-            this.waterColRightPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(108)))), ((int)(((byte)(85)))));
-            this.waterColRightPanel.Controls.Add(this.homeLabel);
+            this.waterColRightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.waterColRightPanel.BackgroundImage = global::HOAWinApp.Properties.Resources.WATER_COLLECTION_DATA2;
             this.waterColRightPanel.Controls.Add(this.watSearchTB);
             this.waterColRightPanel.Controls.Add(this.watSearchBut);
             this.waterColRightPanel.Controls.Add(this.watRelBut);
@@ -61,25 +57,14 @@
             this.waterColRightPanel.Size = new System.Drawing.Size(815, 421);
             this.waterColRightPanel.TabIndex = 0;
             // 
-            // homeLabel
-            // 
-            this.homeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.homeLabel.Font = new System.Drawing.Font("Myanmar Text", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeLabel.Location = new System.Drawing.Point(124, 18);
-            this.homeLabel.Name = "homeLabel";
-            this.homeLabel.Size = new System.Drawing.Size(567, 48);
-            this.homeLabel.TabIndex = 10;
-            this.homeLabel.Text = "WATER COLLECTION DATA";
-            this.homeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // watSearchTB
             // 
             this.watSearchTB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.watSearchTB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.watSearchTB.Location = new System.Drawing.Point(190, 73);
+            this.watSearchTB.Location = new System.Drawing.Point(20, 58);
+            this.watSearchTB.Multiline = true;
             this.watSearchTB.Name = "watSearchTB";
-            this.watSearchTB.Size = new System.Drawing.Size(606, 20);
+            this.watSearchTB.Size = new System.Drawing.Size(606, 30);
             this.watSearchTB.TabIndex = 9;
             this.watSearchTB.Enter += new System.EventHandler(this.watSearchTB_Enter);
             this.watSearchTB.Leave += new System.EventHandler(this.watSearchTB_Leave);
@@ -87,9 +72,9 @@
             // watSearchBut
             // 
             this.watSearchBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watSearchBut.Location = new System.Drawing.Point(105, 71);
+            this.watSearchBut.Location = new System.Drawing.Point(632, 58);
             this.watSearchBut.Name = "watSearchBut";
-            this.watSearchBut.Size = new System.Drawing.Size(79, 23);
+            this.watSearchBut.Size = new System.Drawing.Size(81, 30);
             this.watSearchBut.TabIndex = 8;
             this.watSearchBut.Text = "SEARCH";
             this.watSearchBut.UseVisualStyleBackColor = true;
@@ -98,9 +83,9 @@
             // watRelBut
             // 
             this.watRelBut.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.watRelBut.Location = new System.Drawing.Point(20, 71);
+            this.watRelBut.Location = new System.Drawing.Point(718, 58);
             this.watRelBut.Name = "watRelBut";
-            this.watRelBut.Size = new System.Drawing.Size(79, 23);
+            this.watRelBut.Size = new System.Drawing.Size(79, 30);
             this.watRelBut.TabIndex = 7;
             this.watRelBut.Text = "RELOAD";
             this.watRelBut.UseVisualStyleBackColor = true;
@@ -122,11 +107,11 @@
             // waterColLeftPanel
             // 
             this.waterColLeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(188)))), ((int)(((byte)(218)))));
+            this.waterColLeftPanel.BackgroundImage = global::HOAWinApp.Properties.Resources.Untitled_design__7_6;
             this.waterColLeftPanel.Controls.Add(this.updateBut);
             this.waterColLeftPanel.Controls.Add(this.histWBut);
             this.waterColLeftPanel.Controls.Add(this.excelWBut);
             this.waterColLeftPanel.Controls.Add(this.postPaymentWBut);
-            this.waterColLeftPanel.Controls.Add(this.pictureBox1);
             this.waterColLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.waterColLeftPanel.Location = new System.Drawing.Point(0, 0);
             this.waterColLeftPanel.Name = "waterColLeftPanel";
@@ -135,57 +120,47 @@
             // 
             // updateBut
             // 
+            this.updateBut.BackgroundImage = global::HOAWinApp.Properties.Resources.Generate_Excel_Report__4_1;
             this.updateBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBut.Location = new System.Drawing.Point(21, 130);
             this.updateBut.Name = "updateBut";
             this.updateBut.Size = new System.Drawing.Size(125, 63);
             this.updateBut.TabIndex = 4;
-            this.updateBut.Text = "UPDATE READING";
             this.updateBut.UseVisualStyleBackColor = true;
             this.updateBut.Click += new System.EventHandler(this.updateBut_Click);
             // 
             // histWBut
             // 
+            this.histWBut.BackgroundImage = global::HOAWinApp.Properties.Resources.Generate_Excel_Report__3_3;
             this.histWBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.histWBut.Location = new System.Drawing.Point(21, 337);
             this.histWBut.Name = "histWBut";
             this.histWBut.Size = new System.Drawing.Size(125, 63);
             this.histWBut.TabIndex = 3;
-            this.histWBut.Text = "HISTORY";
             this.histWBut.UseVisualStyleBackColor = true;
             this.histWBut.Click += new System.EventHandler(this.histWBut_Click);
             // 
             // excelWBut
             // 
+            this.excelWBut.BackgroundImage = global::HOAWinApp.Properties.Resources.Generate_Excel_Report__2_3;
             this.excelWBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.excelWBut.Location = new System.Drawing.Point(21, 268);
             this.excelWBut.Name = "excelWBut";
             this.excelWBut.Size = new System.Drawing.Size(125, 63);
             this.excelWBut.TabIndex = 2;
-            this.excelWBut.Text = "GENERATE EXCEL REPORT";
             this.excelWBut.UseVisualStyleBackColor = true;
             this.excelWBut.Click += new System.EventHandler(this.excelWBut_Click);
             // 
             // postPaymentWBut
             // 
+            this.postPaymentWBut.BackgroundImage = global::HOAWinApp.Properties.Resources.Generate_Excel_Report3;
             this.postPaymentWBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.postPaymentWBut.Location = new System.Drawing.Point(21, 199);
             this.postPaymentWBut.Name = "postPaymentWBut";
             this.postPaymentWBut.Size = new System.Drawing.Size(125, 63);
             this.postPaymentWBut.TabIndex = 1;
-            this.postPaymentWBut.Text = "POST PAYMENT";
             this.postPaymentWBut.UseVisualStyleBackColor = true;
             this.postPaymentWBut.Click += new System.EventHandler(this.postPaymentWBut_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // WaterCollection
             // 
@@ -200,7 +175,6 @@
             this.waterColRightPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.watercoltable)).EndInit();
             this.waterColLeftPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,7 +183,6 @@
 
         private System.Windows.Forms.Panel waterColRightPanel;
         private System.Windows.Forms.Panel waterColLeftPanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button postPaymentWBut;
         private System.Windows.Forms.Button excelWBut;
         private System.Windows.Forms.Button histWBut;
@@ -217,7 +190,6 @@
         private System.Windows.Forms.Button watRelBut;
         private System.Windows.Forms.Button watSearchBut;
         private System.Windows.Forms.TextBox watSearchTB;
-        private System.Windows.Forms.Label homeLabel;
         private System.Windows.Forms.Button updateBut;
     }
 }

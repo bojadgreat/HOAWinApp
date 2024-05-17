@@ -33,7 +33,8 @@
             // 
             // homeRightPanel
             // 
-            this.homeRightPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(108)))), ((int)(((byte)(85)))));
+            this.homeRightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.homeRightPanel.BackgroundImage = global::HOAWinApp.Properties.Resources.db3__2_2;
             this.homeRightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homeRightPanel.Location = new System.Drawing.Point(0, 0);
             this.homeRightPanel.Name = "homeRightPanel";

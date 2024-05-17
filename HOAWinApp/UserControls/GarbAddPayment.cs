@@ -430,5 +430,10 @@ namespace HOAWinApp.UserControls
         {
 
         }
+
+        private void promCBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
