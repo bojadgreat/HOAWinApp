@@ -290,6 +290,18 @@
     <Compile Include="UserControls\UpdateWater.Designer.cs">
       <DependentUpon>UpdateWater.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\WaterHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WaterHistory.Designer.cs">
+      <DependentUpon>WaterHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WaterAddPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WaterAddPayment.Designer.cs">
+      <DependentUpon>WaterAddPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\WaterCollection.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -313,6 +325,24 @@
     </Compile>
     <Compile Include="Winforms\EditClient.Designer.cs">
       <DependentUpon>EditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winforms\AddWaterPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winforms\AddWaterPayment.Designer.cs">
+      <DependentUpon>AddWaterPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winforms\DisplayWaterHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winforms\DisplayWaterHistory.Designer.cs">
+      <DependentUpon>DisplayWaterHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winforms\WaterHistoryDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winforms\WaterHistoryDisplay.Designer.cs">
+      <DependentUpon>WaterHistoryDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="Winforms\History.cs">
       <SubType>Form</SubType>
@@ -365,6 +395,9 @@
     <EmbeddedResource Include="UserControls\UpdateWater.resx">
       <DependentUpon>UpdateWater.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WaterAddPayment.resx">
+      <DependentUpon>WaterAddPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\WaterCollection.resx">
       <DependentUpon>WaterCollection.cs</DependentUpon>
     </EmbeddedResource>
@@ -374,8 +407,14 @@
     <EmbeddedResource Include="Winforms\AddPayment.resx">
       <DependentUpon>AddPayment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Winforms\DisplayWaterHistory.resx">
+      <DependentUpon>DisplayWaterHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Winforms\EditClient.resx">
       <DependentUpon>EditClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Winforms\WaterHistoryDisplay.resx">
+      <DependentUpon>WaterHistoryDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Winforms\History.resx">
       <DependentUpon>History.cs</DependentUpon>

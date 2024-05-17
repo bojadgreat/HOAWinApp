@@ -36,11 +36,11 @@
             this.watRelBut = new System.Windows.Forms.Button();
             this.watercoltable = new System.Windows.Forms.DataGridView();
             this.waterColLeftPanel = new System.Windows.Forms.Panel();
+            this.updateBut = new System.Windows.Forms.Button();
             this.histWBut = new System.Windows.Forms.Button();
             this.excelWBut = new System.Windows.Forms.Button();
             this.postPaymentWBut = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.updateBut = new System.Windows.Forms.Button();
             this.waterColRightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.watercoltable)).BeginInit();
             this.waterColLeftPanel.SuspendLayout();
@@ -133,6 +133,17 @@
             this.waterColLeftPanel.Size = new System.Drawing.Size(169, 421);
             this.waterColLeftPanel.TabIndex = 1;
             // 
+            // updateBut
+            // 
+            this.updateBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBut.Location = new System.Drawing.Point(21, 130);
+            this.updateBut.Name = "updateBut";
+            this.updateBut.Size = new System.Drawing.Size(125, 63);
+            this.updateBut.TabIndex = 4;
+            this.updateBut.Text = "UPDATE READING";
+            this.updateBut.UseVisualStyleBackColor = true;
+            this.updateBut.Click += new System.EventHandler(this.updateBut_Click);
+            // 
             // histWBut
             // 
             this.histWBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,6 +153,7 @@
             this.histWBut.TabIndex = 3;
             this.histWBut.Text = "HISTORY";
             this.histWBut.UseVisualStyleBackColor = true;
+            this.histWBut.Click += new System.EventHandler(this.histWBut_Click);
             // 
             // excelWBut
             // 
@@ -168,23 +180,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(125, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // updateBut
-            // 
-            this.updateBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBut.Location = new System.Drawing.Point(21, 130);
-            this.updateBut.Name = "updateBut";
-            this.updateBut.Size = new System.Drawing.Size(125, 63);
-            this.updateBut.TabIndex = 4;
-            this.updateBut.Text = "UPDATE READING";
-            this.updateBut.UseVisualStyleBackColor = true;
-            this.updateBut.Click += new System.EventHandler(this.updateBut_Click);
             // 
             // WaterCollection
             // 

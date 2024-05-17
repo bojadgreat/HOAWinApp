@@ -48,5 +48,10 @@ namespace HOAWinApp.Winforms
         {
             mouseClicked = false;
         }
+
+        private void addPaymentBotPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
