@@ -268,11 +268,11 @@ namespace HOAWinApp.UserControls
                                     //update amount due
                                     UpData("UPDATE watercoldata SET AMTDUE = " + newAmountDue + " WHERE NAME = '" + divName + "';");              
                                     //updated previous based on current
-                                    UpData("UPDATE watercoldata SET PREVIOUS = " + currentTotalReading + " WHERE NAME = '" + divName + "';");
+                                    //UpData("UPDATE watercoldata SET PREVIOUS = " + currentTotalReading + " WHERE NAME = '" + divName + "';");
                                     //update current into 0
-                                    UpData("UPDATE watercoldata SET CURRENT = " + (currentTotalReading + reading) + " WHERE NAME = '" + divName + "';");
+                                    //UpData("UPDATE watercoldata SET CURRENT = " + (currentTotalReading + reading) + " WHERE NAME = '" + divName + "';");
                                     //update reading into 0
-                                    UpData("UPDATE watercoldata SET READING = " + 0 + " WHERE NAME = '" + divName + "';");
+                                    //UpData("UPDATE watercoldata SET READING = " + 0 + " WHERE NAME = '" + divName + "';");
                                     
                                     //if newAmountDue = 0 then set the status to BALANCE PAID
                                     if(newAmountDue == 0)

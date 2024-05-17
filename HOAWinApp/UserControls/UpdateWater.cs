@@ -162,42 +162,49 @@ namespace HOAWinApp.UserControls
                         //20.1-30 current due = 350 * 45 amount due
                         //30.1-40 current due = 350 * 70 amount due
                         //40.1< current due = 350 + 80 amount due
-                        double reading = Math.Round((updateReading - currentTotalReading), 2);
-                        UpData("UPDATE watercoldata SET DUE_DATE = '" + formattedDueDate.ToUpper() + "' WHERE NAME = '" + divName + "';");
-                        UpData("UPDATE watercoldata SET BILLING_DATE = '" + formattedBillingDate.ToUpper() + "' WHERE NAME = '" + divName + "';");
-                        UpData("UPDATE watercoldata SET DATE_FROM = '" + formattedDateFrom.ToUpper() + "' WHERE NAME = '" + divName + "';");
-                        UpData("UPDATE watercoldata SET DATE_TO = '" + formattedDateTo.ToUpper() + "' WHERE NAME = '" + divName + "';");
-                        UpData("UPDATE watercoldata SET PREVIOUS = '" + currentTotalReading + "' WHERE NAME = '" + divName + "';");
-                        UpData("UPDATE watercoldata SET CURRENT = '" + updateReading + "' WHERE NAME = '" + divName + "';");
-                        UpData("UPDATE watercoldata SET READING = '" + reading + "' WHERE NAME = '" + divName + "';");
-                        if (reading >= 0 && reading <= 10)
+                        if (updateReading > currentTotalReading)
                         {
-                            UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + 350) + "' WHERE NAME = '" + divName + "';");
+                            double reading = Math.Round((updateReading - currentTotalReading), 2);
+                            UpData("UPDATE watercoldata SET DUE_DATE = '" + formattedDueDate.ToUpper() + "' WHERE NAME = '" + divName + "';");
+                            UpData("UPDATE watercoldata SET BILLING_DATE = '" + formattedBillingDate.ToUpper() + "' WHERE NAME = '" + divName + "';");
+                            UpData("UPDATE watercoldata SET DATE_FROM = '" + formattedDateFrom.ToUpper() + "' WHERE NAME = '" + divName + "';");
+                            UpData("UPDATE watercoldata SET DATE_TO = '" + formattedDateTo.ToUpper() + "' WHERE NAME = '" + divName + "';");
+                            UpData("UPDATE watercoldata SET PREVIOUS = '" + currentTotalReading + "' WHERE NAME = '" + divName + "';");
+                            UpData("UPDATE watercoldata SET CURRENT = '" + updateReading + "' WHERE NAME = '" + divName + "';");
+                            UpData("UPDATE watercoldata SET READING = '" + reading + "' WHERE NAME = '" + divName + "';");
+                            if (reading >= 0 && reading <= 10)
+                            {
+                                UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + 350) + "' WHERE NAME = '" + divName + "';");
 
+                            }
+                            else if (reading >= 10.1 && reading <= 20)
+                            {
+                                UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading * 40)) + "' WHERE NAME = '" + divName + "';");
+
+                            }
+                            else if (reading >= 20.1 && reading <= 30)
+                            {
+                                UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading * 45)) + "' WHERE NAME = '" + divName + "';");
+
+                            }
+                            else if (reading >= 30.1 && reading <= 40)
+                            {
+                                UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading * 70)) + "' WHERE NAME = '" + divName + "';");
+
+                            }
+                            else if (reading >= 40.1)
+                            {
+                                UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading * 80)) + "' WHERE NAME = '" + divName + "';");
+
+                            }
+                            Form tmp = this.FindForm();
+                            tmp.Close();
+                            tmp.Dispose();
                         }
-                        else if (reading >= 10.1 && reading <= 20)
+                        else
                         {
-                            UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading*40)) + "' WHERE NAME = '" + divName + "';");
-
+                            MessageBox.Show("INVALID AMOUNT!", "AMOUNT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        else if(reading >= 20.1 && reading <= 30)
-                        {
-                            UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading*45)) + "' WHERE NAME = '" + divName + "';");
-
-                        }
-                        else if(reading >= 30.1 && reading <= 40)
-                        {
-                            UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading*70)) + "' WHERE NAME = '" + divName + "';");
-
-                        }
-                        else if(reading >= 40.1)
-                        {
-                            UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading*80)) + "' WHERE NAME = '" + divName + "';");
-
-                        }
-                        Form tmp = this.FindForm();
-                        tmp.Close();
-                        tmp.Dispose();
 
                     }
                     else
