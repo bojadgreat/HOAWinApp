@@ -34,7 +34,7 @@
             // 
             // updateBotPanel
             // 
-            this.updateBotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updateBotPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.updateBotPanel.Location = new System.Drawing.Point(0, 25);
             this.updateBotPanel.Name = "updateBotPanel";
             this.updateBotPanel.Size = new System.Drawing.Size(339, 327);
@@ -61,6 +61,7 @@
             this.Controls.Add(this.updateBotPanel);
             this.Controls.Add(this.updateTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(30, 50);
             this.Name = "WaterUpdateForm";
             this.Text = "WaterUpdateForm";
             this.ResumeLayout(false);

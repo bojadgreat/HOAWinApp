@@ -38,7 +38,7 @@
             this.homeRightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homeRightPanel.Location = new System.Drawing.Point(0, 0);
             this.homeRightPanel.Name = "homeRightPanel";
-            this.homeRightPanel.Size = new System.Drawing.Size(1366, 698);
+            this.homeRightPanel.Size = new System.Drawing.Size(1366, 597);
             this.homeRightPanel.TabIndex = 1;
             // 
             // Home
@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.homeRightPanel);
             this.Name = "Home";
-            this.Size = new System.Drawing.Size(1366, 698);
+            this.Size = new System.Drawing.Size(1366, 597);
             this.ResumeLayout(false);
 
         }

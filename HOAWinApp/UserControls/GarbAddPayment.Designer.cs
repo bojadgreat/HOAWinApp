@@ -72,9 +72,9 @@
             this.canBut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(96)))), ((int)(((byte)(98)))));
             this.canBut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.canBut.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.canBut.Location = new System.Drawing.Point(13, 223);
+            this.canBut.Location = new System.Drawing.Point(15, 226);
             this.canBut.Name = "canBut";
-            this.canBut.Size = new System.Drawing.Size(180, 40);
+            this.canBut.Size = new System.Drawing.Size(176, 40);
             this.canBut.TabIndex = 1;
             this.canBut.UseVisualStyleBackColor = false;
             this.canBut.Click += new System.EventHandler(this.canBut_Click);
@@ -85,7 +85,7 @@
             this.subBut.BackgroundImage = global::HOAWinApp.Properties.Resources.submit;
             this.subBut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.subBut.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subBut.Location = new System.Drawing.Point(217, 223);
+            this.subBut.Location = new System.Drawing.Point(217, 226);
             this.subBut.Name = "subBut";
             this.subBut.Size = new System.Drawing.Size(180, 40);
             this.subBut.TabIndex = 2;
@@ -115,10 +115,11 @@
             // promCBox
             // 
             this.promCBox.AutoSize = true;
+            this.promCBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.promCBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.promCBox.Location = new System.Drawing.Point(158, 209);
+            this.promCBox.Location = new System.Drawing.Point(135, 210);
             this.promCBox.Name = "promCBox";
-            this.promCBox.Size = new System.Drawing.Size(149, 17);
+            this.promCBox.Size = new System.Drawing.Size(160, 16);
             this.promCBox.TabIndex = 7;
             this.promCBox.Text = "Apply For Promissory Note";
             this.promCBox.UseVisualStyleBackColor = true;

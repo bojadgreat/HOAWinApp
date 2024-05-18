@@ -34,7 +34,7 @@
             // 
             // addPaymentTopPanel
             // 
-            this.addPaymentTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(157)))), ((int)(((byte)(42)))));
+            this.addPaymentTopPanel.BackColor = System.Drawing.Color.Black;
             this.addPaymentTopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addPaymentTopPanel.Location = new System.Drawing.Point(0, 0);
             this.addPaymentTopPanel.Name = "addPaymentTopPanel";

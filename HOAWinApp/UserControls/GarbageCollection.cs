@@ -112,44 +112,6 @@ namespace HOAWinApp.UserControls
             }
         }
 
-
-        private void garbSearchBut_Click(object sender, EventArgs e)
-        {
-            string datSearch = garbSearchTB.Text;
-            loadColData("SELECT * FROM garbcoldata WHERE CONCAT(clientID, blockNum, lotNum, fName, lName, pDue, cDue, totPaid, dueDate, colRemarks, payremarks) LIKE '%"+datSearch+"%';", garbagecoltable);
-
-            //setting header text column to desired
-            dgvSetHeadTextColumn("Client Number", 0, garbagecoltable);
-            dgvSetHeadTextColumn("Block Number", 1, garbagecoltable);
-            dgvSetHeadTextColumn("Lot Number", 2, garbagecoltable);
-            dgvSetHeadTextColumn("First Name", 3, garbagecoltable);
-            dgvSetHeadTextColumn("Last Name", 4, garbagecoltable);
-            dgvSetHeadTextColumn("Previous Balance", 5, garbagecoltable);
-            dgvSetHeadTextColumn("Current Balance", 6, garbagecoltable);
-            dgvSetHeadTextColumn("Paid Balance", 7, garbagecoltable);
-            dgvSetHeadTextColumn("Due Date", 8, garbagecoltable);
-            dgvSetHeadTextColumn("Collection Remarks", 9, garbagecoltable);
-            dgvSetHeadTextColumn("Payment Remarks", 10, garbagecoltable);
-            dgvSetHeadTextColumn("Promissory Remarks", 11, garbagecoltable);
-
-            //setting column width to desired
-            dgvSetWidthColumn(50, 0, garbagecoltable);
-            dgvSetWidthColumn(50, 1, garbagecoltable);
-            dgvSetWidthColumn(50, 2, garbagecoltable);
-            dgvSetWidthColumn(120, 3, garbagecoltable);
-            dgvSetWidthColumn(120, 4, garbagecoltable);
-            dgvSetWidthColumn(100, 5, garbagecoltable);
-            dgvSetWidthColumn(100, 6, garbagecoltable);
-            dgvSetWidthColumn(100, 7, garbagecoltable);
-            dgvSetWidthColumn(100, 8, garbagecoltable);
-            dgvSetWidthColumn(150, 9, garbagecoltable);
-            dgvSetWidthColumn(100, 10, garbagecoltable);
-            dgvSetWidthColumn(70, 11, garbagecoltable);
-
-            garbSearchTB.Text = "Enter Client Information";
-            garbSearchTB.ForeColor = Color.Gray;
-        }
-
         private void reloadData()
         {
             loadColData("SELECT * FROM garbcoldata", garbagecoltable);
@@ -279,6 +241,46 @@ namespace HOAWinApp.UserControls
             histForm.Show();
         }
 
+        private void homeRightPanel_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void garbSearchBut_Click(object sender, EventArgs e)
+        {
+            string datSearch = garbSearchTB.Text;
+            loadColData("SELECT * FROM garbcoldata WHERE CONCAT(clientID, blockNum, lotNum, fName, lName, pDue, cDue, totPaid, dueDate, colRemarks, payremarks) LIKE '%" + datSearch + "%';", garbagecoltable);
+
+            //setting header text column to desired
+            dgvSetHeadTextColumn("Client Number", 0, garbagecoltable);
+            dgvSetHeadTextColumn("Block Number", 1, garbagecoltable);
+            dgvSetHeadTextColumn("Lot Number", 2, garbagecoltable);
+            dgvSetHeadTextColumn("First Name", 3, garbagecoltable);
+            dgvSetHeadTextColumn("Last Name", 4, garbagecoltable);
+            dgvSetHeadTextColumn("Previous Balance", 5, garbagecoltable);
+            dgvSetHeadTextColumn("Current Balance", 6, garbagecoltable);
+            dgvSetHeadTextColumn("Paid Balance", 7, garbagecoltable);
+            dgvSetHeadTextColumn("Due Date", 8, garbagecoltable);
+            dgvSetHeadTextColumn("Collection Remarks", 9, garbagecoltable);
+            dgvSetHeadTextColumn("Payment Remarks", 10, garbagecoltable);
+            dgvSetHeadTextColumn("Promissory Remarks", 11, garbagecoltable);
+
+            //setting column width to desired
+            dgvSetWidthColumn(50, 0, garbagecoltable);
+            dgvSetWidthColumn(50, 1, garbagecoltable);
+            dgvSetWidthColumn(50, 2, garbagecoltable);
+            dgvSetWidthColumn(120, 3, garbagecoltable);
+            dgvSetWidthColumn(120, 4, garbagecoltable);
+            dgvSetWidthColumn(100, 5, garbagecoltable);
+            dgvSetWidthColumn(100, 6, garbagecoltable);
+            dgvSetWidthColumn(100, 7, garbagecoltable);
+            dgvSetWidthColumn(100, 8, garbagecoltable);
+            dgvSetWidthColumn(150, 9, garbagecoltable);
+            dgvSetWidthColumn(100, 10, garbagecoltable);
+            dgvSetWidthColumn(70, 11, garbagecoltable);
+
+            garbSearchTB.Text = "Enter Client Information";
+            garbSearchTB.ForeColor = Color.Gray;
+        }
     }
 }

@@ -81,16 +81,6 @@ namespace HOAWinApp.UserControls
             }
         }
 
-        private void watRelBut_Click(object sender, EventArgs e)
-        {
-            reloadData();
-        }
-
-        private void watSearchBut_Click(object sender, EventArgs e)
-        {
-            string datSearch = watSearchTB.Text;
-            loadColData("SELECT * FROM watercoldata WHERE CONCAT(BLOCK_LOT, NAME, STATUS, DUE_DATE, BILLING_DATE, FROM, TO, CURRENT, PREVIOUS, READING, AMTDUE) LIKE '%" + datSearch + "%';", watercoltable);
-        }
 
         private void excelWBut_Click(object sender, EventArgs e)
         {
@@ -167,9 +157,15 @@ namespace HOAWinApp.UserControls
             histForm.Show();
         }
 
-        private void watercoltable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void watSearchBut_Click(object sender, EventArgs e)
         {
+            string datSearch = watSearchTB.Text;
+            loadColData("SELECT * FROM watercoldata WHERE CONCAT(BLOCK_LOT, NAME, STATUS, DUE_DATE, BILLING_DATE, FROM, TO, CURRENT, PREVIOUS, READING, AMTDUE) LIKE '%" + datSearch + "%';", watercoltable);
+        }
 
+        private void watRelBut_Click(object sender, EventArgs e)
+        {
+            reloadData();
         }
     }
 }
