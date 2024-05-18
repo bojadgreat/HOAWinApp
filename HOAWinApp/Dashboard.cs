@@ -151,5 +151,14 @@ namespace HOAWinApp
         {
 
         }
+
+        private void histPicBoxX1_Click(object sender, EventArgs e)
+        {
+            Form parentForm = this.FindForm();
+            if (parentForm != null)
+            {
+                parentForm.Close();
+            }
+        }
     }
 }

@@ -373,6 +373,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Screen\MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
@@ -448,6 +449,36 @@
   <ItemGroup>
     <Content Include="Images\haniyyah-high-resolution-logo.png" />
     <Content Include="Images\shutdown.png" />
+    <None Include="Resources\kilid.png" />
+    <None Include="Resources\dashClients.png" />
+    <None Include="Resources\dashWaterCol.png" />
+    <None Include="Resources\dashGarbCol1.png" />
+    <None Include="Resources\dashGarbCol.png" />
+    <None Include="Resources\dashHome2.png" />
+    <None Include="Resources\dashHome1.png" />
+    <None Include="Resources\dashhome.png" />
+    <None Include="Resources\bgDashBoardv2.png" />
+    <None Include="Resources\bgBoadv2.png" />
+    <None Include="Resources\bgDashBoad.png" />
+    <None Include="Resources\bgMainBoard.png" />
+    <None Include="Resources\dh31.png" />
+    <None Include="Resources\ms1.png" />
+    <None Include="Resources\dh3.png" />
+    <None Include="Resources\dashboardheader21.png" />
+    <None Include="Resources\dashboardheader2.png" />
+    <None Include="Resources\tri32.png" />
+    <None Include="Resources\tri31.png" />
+    <None Include="Resources\clients.png" />
+    <None Include="Resources\watercoll1.png" />
+    <None Include="Resources\garb1.png" />
+    <None Include="Resources\home21.png" />
+    <None Include="Resources\home11.png" />
+    <None Include="Resources\tri4.png" />
+    <None Include="Resources\dashboardheader1.png" />
+    <None Include="Resources\tri3.png" />
+    <None Include="Resources\trii2.png" />
+    <None Include="Resources\tri1.png" />
+    <None Include="Resources\dashboardheader.png" />
     <None Include="Resources\hatdog.png" />
     <None Include="Resources\ambotwabalo.png" />
     <None Include="Resources\ambot.png" />
