@@ -46,7 +46,7 @@
             // homeLeftPanel
             // 
             this.homeLeftPanel.BackColor = System.Drawing.Color.Transparent;
-            this.homeLeftPanel.BackgroundImage = global::HOAWinApp.Properties.Resources.Untitled_design__7_5;
+            this.homeLeftPanel.BackgroundImage = global::HOAWinApp.Properties.Resources.kilid;
             this.homeLeftPanel.Controls.Add(this.histGBut);
             this.homeLeftPanel.Controls.Add(this.generateExGBut);
             this.homeLeftPanel.Controls.Add(this.postPaymentGBut);
@@ -63,7 +63,7 @@
             this.histGBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.histGBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.histGBut.ForeColor = System.Drawing.Color.Transparent;
-            this.histGBut.Location = new System.Drawing.Point(17, 322);
+            this.histGBut.Location = new System.Drawing.Point(17, 439);
             this.histGBut.Name = "histGBut";
             this.histGBut.Size = new System.Drawing.Size(125, 63);
             this.histGBut.TabIndex = 8;
@@ -77,7 +77,7 @@
             this.generateExGBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.generateExGBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generateExGBut.ForeColor = System.Drawing.Color.Transparent;
-            this.generateExGBut.Location = new System.Drawing.Point(17, 240);
+            this.generateExGBut.Location = new System.Drawing.Point(17, 309);
             this.generateExGBut.Name = "generateExGBut";
             this.generateExGBut.Size = new System.Drawing.Size(125, 63);
             this.generateExGBut.TabIndex = 7;
@@ -87,11 +87,11 @@
             // postPaymentGBut
             // 
             this.postPaymentGBut.BackColor = System.Drawing.Color.Transparent;
-            this.postPaymentGBut.BackgroundImage = global::HOAWinApp.Properties.Resources.Generate_Excel_Report2;
+            this.postPaymentGBut.BackgroundImage = global::HOAWinApp.Properties.Resources.Generate_Excel_Report1;
             this.postPaymentGBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.postPaymentGBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.postPaymentGBut.ForeColor = System.Drawing.Color.Transparent;
-            this.postPaymentGBut.Location = new System.Drawing.Point(17, 154);
+            this.postPaymentGBut.Location = new System.Drawing.Point(17, 206);
             this.postPaymentGBut.Name = "postPaymentGBut";
             this.postPaymentGBut.Size = new System.Drawing.Size(125, 63);
             this.postPaymentGBut.TabIndex = 6;
