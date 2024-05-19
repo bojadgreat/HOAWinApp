@@ -262,7 +262,7 @@ namespace HOAWinApp.UserControls
                                 double reading = getDoubData("SELECT READING FROM watercoldata WHERE NAME = '" + divName + "';");
 
 
-                                if (AmountDue >= 0 && payAmount == AmountDue)
+                                if (AmountDue >= 0)
                                 {
                                     double newAmountDue = AmountDue - payAmount;
                                     //update amount due

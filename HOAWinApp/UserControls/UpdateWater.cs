@@ -197,10 +197,16 @@ namespace HOAWinApp.UserControls
                                 UpData("UPDATE watercoldata SET AMTDUE = '" + (amountDue + (reading * 80)) + "' WHERE NAME = '" + divName + "';");
 
                             }
+                            if (amountDue > 0)
+                            {
+                                UpData("UPDATE watercoldata SET STATUS = '" + "PLEASE PAY YOUR BILLS ON TIME" + "' WHERE NAME = '" + divName + "';");
+                            }
                             Form tmp = this.FindForm();
                             tmp.Close();
                             tmp.Dispose();
                         }
+
+                        
                         else
                         {
                             MessageBox.Show("INVALID AMOUNT!", "AMOUNT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
