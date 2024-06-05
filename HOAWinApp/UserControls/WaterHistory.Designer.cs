@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvWaterHist = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.waterHistTB = new System.Windows.Forms.TextBox();
             this.waterHistRelBut = new System.Windows.Forms.Button();
             this.waterHistSearchBut = new System.Windows.Forms.Button();
@@ -41,23 +40,10 @@
             this.dgvWaterHist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvWaterHist.Location = new System.Drawing.Point(19, 70);
             this.dgvWaterHist.Name = "dgvWaterHist";
-            this.dgvWaterHist.Size = new System.Drawing.Size(464, 179);
+            this.dgvWaterHist.Size = new System.Drawing.Size(464, 192);
             this.dgvWaterHist.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "WATER COLLECTION PAYMENT HISTORY";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // WaterHistTB
+            // waterHistTB
             // 
             this.waterHistTB.Location = new System.Drawing.Point(181, 46);
             this.waterHistTB.Name = "waterHistTB";
@@ -66,7 +52,7 @@
             this.waterHistTB.Enter += new System.EventHandler(this.waterSearchTB_Enter);
             this.waterHistTB.Leave += new System.EventHandler(this.waterSearchTB_Leave);
             // 
-            // WaterHistRelBut
+            // waterHistRelBut
             // 
             this.waterHistRelBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.waterHistRelBut.Location = new System.Drawing.Point(19, 44);
@@ -77,7 +63,7 @@
             this.waterHistRelBut.UseVisualStyleBackColor = true;
             this.waterHistRelBut.Click += new System.EventHandler(this.waterHistRelBut_Click);
             // 
-            // WaterHistSearchBut
+            // waterHistSearchBut
             // 
             this.waterHistSearchBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.waterHistSearchBut.Location = new System.Drawing.Point(100, 44);
@@ -92,11 +78,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(108)))), ((int)(((byte)(85)))));
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::HOAWinApp.Properties.Resources.historyagain;
             this.Controls.Add(this.waterHistSearchBut);
             this.Controls.Add(this.waterHistRelBut);
             this.Controls.Add(this.waterHistTB);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvWaterHist);
             this.Name = "WaterHistory";
             this.Size = new System.Drawing.Size(500, 265);
@@ -110,7 +96,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvWaterHist;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox waterHistTB;
         private System.Windows.Forms.Button waterHistRelBut;
         private System.Windows.Forms.Button waterHistSearchBut;

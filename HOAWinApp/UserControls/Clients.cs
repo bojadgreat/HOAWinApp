@@ -79,32 +79,6 @@ namespace HOAWinApp.UserControls
             dgvCol.Columns[colInd].Width = width;
         }
 
-        private void clientRelBut_Click(object sender, EventArgs e)
-        {
-            reloadData();
-        }
-
-        private void clientSearchBut_Click(object sender, EventArgs e)
-        {
-            string datSearch = clientSearchTB.Text;
-            loadTable("SELECT blockNum, lotNum, fName, lName, cDue FROM garbcoldata WHERE CONCAT(blockNum, lotNum, fName, lName, cDue) LIKE '%" + datSearch + "%';", clientTable);
-
-            dgvSetHeadTextColumn("Block Number", 0, clientTable);
-            dgvSetHeadTextColumn("Lot Number", 1, clientTable);
-            dgvSetHeadTextColumn("FirstName", 2, clientTable);
-            dgvSetHeadTextColumn("Last Name", 3, clientTable);
-            dgvSetHeadTextColumn("Current Balance", 4, clientTable);
-
-            dgvSetWidthColumn(200, 0, clientTable);
-            dgvSetWidthColumn(200, 1, clientTable);
-            dgvSetWidthColumn(250, 2, clientTable);
-            dgvSetWidthColumn(250, 3, clientTable);
-            dgvSetWidthColumn(250, 4, clientTable);
-
-            clientSearchTB.Text = "Enter Client Information";
-            clientSearchTB.ForeColor = Color.Gray;
-        }
-
         private void clientSearchTB_Enter(object sender, EventArgs e)
         {
             if (clientSearchTB.Text == "Enter Client Information")
@@ -214,6 +188,32 @@ namespace HOAWinApp.UserControls
             {
                 MessageBox.Show("Database Error");
             }
+        }
+
+        private void clientSearchBut_Click(object sender, EventArgs e)
+        {
+            string datSearch = clientSearchTB.Text;
+            loadTable("SELECT blockNum, lotNum, fName, lName, cDue FROM garbcoldata WHERE CONCAT(blockNum, lotNum, fName, lName, cDue) LIKE '%" + datSearch + "%';", clientTable);
+
+            dgvSetHeadTextColumn("Block Number", 0, clientTable);
+            dgvSetHeadTextColumn("Lot Number", 1, clientTable);
+            dgvSetHeadTextColumn("FirstName", 2, clientTable);
+            dgvSetHeadTextColumn("Last Name", 3, clientTable);
+            dgvSetHeadTextColumn("Current Balance", 4, clientTable);
+
+            dgvSetWidthColumn(200, 0, clientTable);
+            dgvSetWidthColumn(200, 1, clientTable);
+            dgvSetWidthColumn(250, 2, clientTable);
+            dgvSetWidthColumn(250, 3, clientTable);
+            dgvSetWidthColumn(250, 4, clientTable);
+
+            clientSearchTB.Text = "Enter Client Information";
+            clientSearchTB.ForeColor = Color.Gray;
+        }
+
+        private void clientRelBut_Click(object sender, EventArgs e)
+        {
+            reloadData();
         }
 
 

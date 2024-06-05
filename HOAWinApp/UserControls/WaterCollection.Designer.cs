@@ -59,7 +59,7 @@
             // 
             // updateBut
             // 
-            this.updateBut.BackgroundImage = global::HOAWinApp.Properties.Resources.updateReading1;
+            this.updateBut.BackgroundImage = global::HOAWinApp.Properties.Resources.upup;
             this.updateBut.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBut.Location = new System.Drawing.Point(23, 94);
             this.updateBut.Name = "updateBut";

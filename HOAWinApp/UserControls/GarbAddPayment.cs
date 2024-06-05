@@ -32,12 +32,7 @@ namespace HOAWinApp.UserControls
             payAmTB.TextChanged += payAmTB_TextChanged;
         }
 
-        private void canBut_Click(object sender, EventArgs e)
-        {
-            Form tmp = this.FindForm();
-            tmp.Close();
-            tmp.Dispose();
-        }
+
 
         private AutoCompleteStringCollection loadDataAutoComp(string strQuer)
         {
@@ -224,12 +219,119 @@ namespace HOAWinApp.UserControls
             }
         }
 
+        private void generateReceipt(string fName, string lName)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Word Document (*.docx)|*.docx";
+            saveFileDialog.Title = "Save Receipt";
+            saveFileDialog.ShowDialog();
+
+            if (!string.IsNullOrEmpty(saveFileDialog.FileName))
+            {
+                // Assuming the following variables are defined elsewhere in your code:
+                // string fName = "John"; 
+                // string lName = "Doe";
+                // string item = "HOA Fees for May 2024";
+                float amount =  float.Parse(payAmTB.Text);
+
+                // Create a new document
+                using (DocX document = DocX.Create(saveFileDialog.FileName))
+                {
+                    // Add a title
+                    document.InsertParagraph("Homeowners Association Fee Receipt")
+                        .FontSize(20)
+                        .Bold()
+                        .Alignment = Alignment.center;
+
+                    // Add date and time
+                    document.InsertParagraph("Date: " + DateTime.Now.ToShortDateString())
+                        .FontSize(12)
+                        .SpacingAfter(10);
+                    document.InsertParagraph("Time: " + DateTime.Now.ToShortTimeString())
+                        .FontSize(12)
+                        .SpacingAfter(20);
+
+                    // Add homeowner information
+                    document.InsertParagraph("Customer Information")
+                        .FontSize(14)
+                        .Bold()
+                        .SpacingAfter(10);
+                    document.InsertParagraph("Name: " + fName + " " + lName)
+                        .FontSize(12)
+                        .SpacingAfter(20);
+
+                    // Add payment information
+                    document.InsertParagraph("Payment Details")
+                        .FontSize(14)
+                        .Bold()
+                        .SpacingAfter(10);
+                    document.InsertParagraph("Price: " + amount.ToString("F2") + " PESOS")
+                        .FontSize(12)
+                        .SpacingAfter(20);
+
+                    // Add footer with thank you note
+                    document.InsertParagraph("Thank you for your payment!")
+                        .FontSize(12)
+                        .Italic()
+                        .SpacingAfter(10)
+                        .Alignment = Alignment.center;
+                        
+                    document.InsertParagraph("If you have any questions, please contact us at (CONTACT NUMBER) or email support@hoa.com.")
+                        .FontSize(10)
+                        .SpacingAfter(5)
+                        .Alignment = Alignment.center;
+
+                    // Save the document
+                    document.Save();
+
+                    MessageBox.Show("RECEIPT SUCCESSFULLY CREATED!", "RECEIPT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("INVALID FILENAME!", "INVALID FILENAME", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //function to ensure payAmTB only accepts numeric value
+        private void payAmTB_TextChanged(object sender, EventArgs e)
+        {
+            string input = payAmTB.Text;
+
+            string numericInput = Regex.Replace(input, "[^0-9]", "");
+
+            payAmTB.Text = numericInput;
+
+            payAmTB.SelectionStart = payAmTB.Text.Length;
+        }
+
+        private void clientNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientNameTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void promCBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void canBut_Click(object sender, EventArgs e)
+        {
+            Form tmp = this.FindForm();
+            tmp.Close();
+            tmp.Dispose();
+        }
+
         private void subBut_Click(object sender, EventArgs e)
         {
-            
             DialogResult result = MessageBox.Show("Do you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(result == DialogResult.Yes) 
+            if (result == DialogResult.Yes)
             {
                 transType = "Add Payment for Garbage Collection";
                 DateTime currentDate = DateTime.Now;
@@ -333,107 +435,6 @@ namespace HOAWinApp.UserControls
                     }
                 }
             }
-        }
-
-        private void generateReceipt(string fName, string lName)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Word Document (*.docx)|*.docx";
-            saveFileDialog.Title = "Save Receipt";
-            saveFileDialog.ShowDialog();
-
-            if (!string.IsNullOrEmpty(saveFileDialog.FileName))
-            {
-                // Assuming the following variables are defined elsewhere in your code:
-                // string fName = "John"; 
-                // string lName = "Doe";
-                // string item = "HOA Fees for May 2024";
-                float amount =  float.Parse(payAmTB.Text);
-
-                // Create a new document
-                using (DocX document = DocX.Create(saveFileDialog.FileName))
-                {
-                    // Add a title
-                    document.InsertParagraph("Homeowners Association Fee Receipt")
-                        .FontSize(20)
-                        .Bold()
-                        .Alignment = Alignment.center;
-
-                    // Add date and time
-                    document.InsertParagraph("Date: " + DateTime.Now.ToShortDateString())
-                        .FontSize(12)
-                        .SpacingAfter(10);
-                    document.InsertParagraph("Time: " + DateTime.Now.ToShortTimeString())
-                        .FontSize(12)
-                        .SpacingAfter(20);
-
-                    // Add homeowner information
-                    document.InsertParagraph("Customer Information")
-                        .FontSize(14)
-                        .Bold()
-                        .SpacingAfter(10);
-                    document.InsertParagraph("Name: " + fName + " " + lName)
-                        .FontSize(12)
-                        .SpacingAfter(20);
-
-                    // Add payment information
-                    document.InsertParagraph("Payment Details")
-                        .FontSize(14)
-                        .Bold()
-                        .SpacingAfter(10);
-                    document.InsertParagraph("Price: " + amount.ToString("F2") + " PESOS")
-                        .FontSize(12)
-                        .SpacingAfter(20);
-
-                    // Add footer with thank you note
-                    document.InsertParagraph("Thank you for your payment!")
-                        .FontSize(12)
-                        .Italic()
-                        .SpacingAfter(10)
-                        .Alignment = Alignment.center;
-                        
-                    document.InsertParagraph("If you have any questions, please contact us at (CONTACT NUMBER) or email support@hoa.com.")
-                        .FontSize(10)
-                        .SpacingAfter(5)
-                        .Alignment = Alignment.center;
-
-                    // Save the document
-                    document.Save();
-
-                    MessageBox.Show("RECEIPT SUCCESSFULLY CREATED!", "RECEIPT", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            else
-            {
-                MessageBox.Show("INVALID FILENAME!", "INVALID FILENAME", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        //function to ensure payAmTB only accepts numeric value
-        private void payAmTB_TextChanged(object sender, EventArgs e)
-        {
-            string input = payAmTB.Text;
-
-            string numericInput = Regex.Replace(input, "[^0-9]", "");
-
-            payAmTB.Text = numericInput;
-
-            payAmTB.SelectionStart = payAmTB.Text.Length;
-        }
-
-        private void clientNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void clientNameTB_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void promCBox_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

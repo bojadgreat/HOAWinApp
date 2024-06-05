@@ -34,11 +34,11 @@
             // 
             // editClientTopPanel
             // 
-            this.editClientTopPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.editClientTopPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.editClientTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.editClientTopPanel.Location = new System.Drawing.Point(0, 0);
             this.editClientTopPanel.Name = "editClientTopPanel";
-            this.editClientTopPanel.Size = new System.Drawing.Size(500, 30);
+            this.editClientTopPanel.Size = new System.Drawing.Size(732, 35);
             this.editClientTopPanel.TabIndex = 0;
             this.editClientTopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.editClientTopPanel_MouseDown);
             this.editClientTopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.editClientTopPanel_MouseMove);
@@ -46,19 +46,19 @@
             // 
             // editClientBotPanel
             // 
-            this.editClientBotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.editClientBotPanel.Location = new System.Drawing.Point(0, 30);
+            this.editClientBotPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.editClientBotPanel.Location = new System.Drawing.Point(0, 35);
             this.editClientBotPanel.Name = "editClientBotPanel";
-            this.editClientBotPanel.Size = new System.Drawing.Size(500, 270);
+            this.editClientBotPanel.Size = new System.Drawing.Size(732, 325);
             this.editClientBotPanel.TabIndex = 1;
             // 
             // EditClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 300);
-            this.Controls.Add(this.editClientBotPanel);
+            this.ClientSize = new System.Drawing.Size(732, 360);
             this.Controls.Add(this.editClientTopPanel);
+            this.Controls.Add(this.editClientBotPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditClient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

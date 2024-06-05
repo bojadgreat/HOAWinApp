@@ -23,12 +23,7 @@ namespace HOAWinApp.UserControls
             lotNumTB.TextChanged += lotNumTB_TextChanged;
         }
 
-        private void canBut_Click(object sender, EventArgs e)
-        {
-            Form tmp = this.FindForm();
-            tmp.Close();
-            tmp.Dispose();
-        }
+
 
         private void ClientEdit_Load(object sender, EventArgs e)
         {
@@ -138,30 +133,7 @@ namespace HOAWinApp.UserControls
             } 
         }
 
-        private void subBut_Click(object sender, EventArgs e)
-        {
-            string fName = fNameTB.Text;
-            string lName = lNameTB.Text;
-            string blockNum = blockNumTB.Text;
-            string lotNum = lotNumTB.Text;
-            DialogResult result = MessageBox.Show("Do you want to edit this client?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                //to get selected name
-                DataRowView selectedRow = clientLBox.SelectedItem as DataRowView;
-                if (selectedRow != null)
-                {
-                    string transType = "Edit Client";
-                    DateTime curDateTime = DateTime.Now;
-                    string selectedName = selectedRow["fullName"].ToString();
-                    string[] name = selectedName.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-                    query("UPDATE garbcoldata SET fName = '" + fName + "', lName = '" + lName + "', blockNum = '" + blockNum + "', lotNum = '" + lotNum + "'  WHERE fName = '" + name[0] + "' AND lName = '" + name[1] + "';");
-                    MessageBox.Show("Client successfully edited!", "EDIT CLIENT", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    query("INSERT INTO overalltransachist (dateTimeStamp, transType, fullName) VALUES ('" + curDateTime.ToString("yyyy-MM-dd HH:ss") + "', '" + transType + "', '" + name[1] + "," + name[0] + "')");
-                }
-            }
-        }
+ 
 
         //ensure block num accepts numeric value
         private void blockNumTB_TextChanged(object sender, EventArgs e)
@@ -210,6 +182,38 @@ namespace HOAWinApp.UserControls
             else
             {
                 MessageBox.Show("Database Error");
+            }
+        }
+
+        private void canBut_Click(object sender, EventArgs e)
+        {
+            Form tmp = this.FindForm();
+            tmp.Close();
+            tmp.Dispose();
+        }
+
+        private void subBut_Click(object sender, EventArgs e)
+        {
+            string fName = fNameTB.Text;
+            string lName = lNameTB.Text;
+            string blockNum = blockNumTB.Text;
+            string lotNum = lotNumTB.Text;
+            DialogResult result = MessageBox.Show("Do you want to edit this client?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                //to get selected name
+                DataRowView selectedRow = clientLBox.SelectedItem as DataRowView;
+                if (selectedRow != null)
+                {
+                    string transType = "Edit Client";
+                    DateTime curDateTime = DateTime.Now;
+                    string selectedName = selectedRow["fullName"].ToString();
+                    string[] name = selectedName.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    query("UPDATE garbcoldata SET fName = '" + fName + "', lName = '" + lName + "', blockNum = '" + blockNum + "', lotNum = '" + lotNum + "'  WHERE fName = '" + name[0] + "' AND lName = '" + name[1] + "';");
+                    MessageBox.Show("Client successfully edited!", "EDIT CLIENT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    query("INSERT INTO overalltransachist (dateTimeStamp, transType, fullName) VALUES ('" + curDateTime.ToString("yyyy-MM-dd HH:ss") + "', '" + transType + "', '" + name[1] + "," + name[0] + "')");
+                }
             }
         }
     }

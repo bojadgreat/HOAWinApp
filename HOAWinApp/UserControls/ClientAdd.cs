@@ -31,13 +31,6 @@ namespace HOAWinApp.UserControls
             lNameTB.ForeColor = Color.Gray;
         }
 
-        private void canBut_Click(object sender, EventArgs e)
-        {
-            Form tmp = this.FindForm();
-            tmp.Close();
-            tmp.Dispose();
-        }
-
         private void insertClient(string strQuer)
         {
             var dbConn = new dbConnect();
@@ -63,68 +56,6 @@ namespace HOAWinApp.UserControls
             }
         }
 
-        private void subBut_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Do you want to add this client?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(result == DialogResult.Yes)
-            {
-                DateTime curDate = DateTime.Now;
-                DateTime newCurDate = DateTime.Now.AddMonths(1);
-                DateTime newCompDate = new DateTime(curDate.Year, newCurDate.Month, 01);
-
-                if (!string.IsNullOrWhiteSpace(fNameTB.Text) && !string.IsNullOrWhiteSpace(lNameTB.Text) && !string.IsNullOrWhiteSpace(lotNumTB.Text) && !string.IsNullOrWhiteSpace(blockNumTB.Text))
-                {
-                    //to add also for water collection
-                    insertClient("INSERT INTO garbcoldata (blockNum, lotNum, fName, lName, pDue, cDue, totPaid, dueDate, colRemarks, payRemarks, promRemarks) VALUES (" + Convert.ToInt32(blockNumTB.Text) + ", " + Convert.ToInt32(blockNumTB.Text) + ", '" + fNameTB.Text + "', '" + lNameTB.Text + "', 0, 400, 0, '" + newCompDate.ToString("yyyy-MM-dd") + "','NOT FOR COLLECTION', 'NOT PAID', 'NO');");
-                    MessageBox.Show("Client successfully added!","ADD CLIENT",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
-                else
-                {
-                    //error message for first name tb
-                    if (string.IsNullOrWhiteSpace(fNameTB.Text) || fNameTB.Text == "Enter First Name")
-                    {
-                        clientAddErrorProvider.SetError(fNameTB, "This field cannot be empty");
-                    }
-                    else
-                    {
-                        clientAddErrorProvider.SetError(fNameTB, "");
-                    }
-
-                    //error message for last name tb
-                    if (string.IsNullOrWhiteSpace(lNameTB.Text) || lNameTB.Text == "Enter Last Name")
-                    {
-                        clientAddErrorProvider.SetError(lNameTB, "This field cannot be empty");
-                    }
-                    else
-                    {
-                        clientAddErrorProvider.SetError(lNameTB, "");
-                    }
-
-                    //error message for block number tb
-                    if (string.IsNullOrWhiteSpace(blockNumTB.Text) || blockNumTB.Text == "Enter Block Number")
-                    {
-                        clientAddErrorProvider.SetError(blockNumTB, "This field cannot be empty");
-                    }
-                    else
-                    {
-                        clientAddErrorProvider.SetError(blockNumTB, "");
-                    }
-
-                    //error message for lot number tb
-                    if (string.IsNullOrWhiteSpace(lotNumTB.Text) || lotNumTB.Text == "Enter Lot Number")
-                    {
-                        clientAddErrorProvider.SetError(lotNumTB, "This field cannot be empty");
-                    }
-                    else
-                    {
-                        clientAddErrorProvider.SetError(lotNumTB, "");
-                    }
-                }
-            }
-            
-                
-        }
 
         private void fNameTB_Enter(object sender, EventArgs e)
         {
@@ -185,6 +116,74 @@ namespace HOAWinApp.UserControls
             lotNumTB.Text = numericInput;
 
             lotNumTB.SelectionStart = lotNumTB.Text.Length;
+        }
+
+        private void canBut_Click(object sender, EventArgs e)
+        {
+            Form tmp = this.FindForm();
+            tmp.Close();
+            tmp.Dispose();
+        }
+
+        private void subBut_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to add this client?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                DateTime curDate = DateTime.Now;
+                DateTime newCurDate = DateTime.Now.AddMonths(1);
+                DateTime newCompDate = new DateTime(curDate.Year, newCurDate.Month, 01);
+
+                if (!string.IsNullOrWhiteSpace(fNameTB.Text) && !string.IsNullOrWhiteSpace(lNameTB.Text) && !string.IsNullOrWhiteSpace(lotNumTB.Text) && !string.IsNullOrWhiteSpace(blockNumTB.Text))
+                {
+                    //to add also for water collection
+                    insertClient("INSERT INTO garbcoldata (blockNum, lotNum, fName, lName, pDue, cDue, totPaid, dueDate, colRemarks, payRemarks, promRemarks) VALUES (" + Convert.ToInt32(blockNumTB.Text) + ", " + Convert.ToInt32(blockNumTB.Text) + ", '" + fNameTB.Text + "', '" + lNameTB.Text + "', 0, 400, 0, '" + newCompDate.ToString("yyyy-MM-dd") + "','NOT FOR COLLECTION', 'NOT PAID', 'NO');");
+                    MessageBox.Show("Client successfully added!", "ADD CLIENT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                else
+                {
+                    //error message for first name tb
+                    if (string.IsNullOrWhiteSpace(fNameTB.Text) || fNameTB.Text == "Enter First Name")
+                    {
+                        clientAddErrorProvider.SetError(fNameTB, "This field cannot be empty");
+                    }
+                    else
+                    {
+                        clientAddErrorProvider.SetError(fNameTB, "");
+                    }
+
+                    //error message for last name tb
+                    if (string.IsNullOrWhiteSpace(lNameTB.Text) || lNameTB.Text == "Enter Last Name")
+                    {
+                        clientAddErrorProvider.SetError(lNameTB, "This field cannot be empty");
+                    }
+                    else
+                    {
+                        clientAddErrorProvider.SetError(lNameTB, "");
+                    }
+
+                    //error message for block number tb
+                    if (string.IsNullOrWhiteSpace(blockNumTB.Text) || blockNumTB.Text == "Enter Block Number")
+                    {
+                        clientAddErrorProvider.SetError(blockNumTB, "This field cannot be empty");
+                    }
+                    else
+                    {
+                        clientAddErrorProvider.SetError(blockNumTB, "");
+                    }
+
+                    //error message for lot number tb
+                    if (string.IsNullOrWhiteSpace(lotNumTB.Text) || lotNumTB.Text == "Enter Lot Number")
+                    {
+                        clientAddErrorProvider.SetError(lotNumTB, "This field cannot be empty");
+                    }
+                    else
+                    {
+                        clientAddErrorProvider.SetError(lotNumTB, "");
+                    }
+                }
+            }
         }
     }
 }

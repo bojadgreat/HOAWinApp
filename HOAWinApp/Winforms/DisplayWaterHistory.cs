@@ -48,8 +48,6 @@ namespace HOAWinApp.Winforms
             mouseClicked = false;
         }
 
-
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();

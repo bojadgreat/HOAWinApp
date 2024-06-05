@@ -41,16 +41,15 @@
             this.dgvGarbHist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGarbHist.Location = new System.Drawing.Point(19, 108);
             this.dgvGarbHist.Name = "dgvGarbHist";
-            this.dgvGarbHist.Size = new System.Drawing.Size(675, 237);
+            this.dgvGarbHist.Size = new System.Drawing.Size(682, 237);
             this.dgvGarbHist.TabIndex = 0;
             this.dgvGarbHist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGarbHist_CellContentClick);
             // 
             // garbHistTB
             // 
-            this.garbHistTB.Location = new System.Drawing.Point(19, 80);
-            this.garbHistTB.Multiline = true;
+            this.garbHistTB.Location = new System.Drawing.Point(191, 80);
             this.garbHistTB.Name = "garbHistTB";
-            this.garbHistTB.Size = new System.Drawing.Size(432, 22);
+            this.garbHistTB.Size = new System.Drawing.Size(357, 20);
             this.garbHistTB.TabIndex = 2;
             this.garbHistTB.Enter += new System.EventHandler(this.garbSearchTB_Enter);
             this.garbHistTB.Leave += new System.EventHandler(this.garbSearchTB_Leave);
@@ -58,7 +57,7 @@
             // garbHistExpBut
             // 
             this.garbHistExpBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbHistExpBut.Location = new System.Drawing.Point(538, 79);
+            this.garbHistExpBut.Location = new System.Drawing.Point(626, 79);
             this.garbHistExpBut.Name = "garbHistExpBut";
             this.garbHistExpBut.Size = new System.Drawing.Size(75, 23);
             this.garbHistExpBut.TabIndex = 3;
@@ -69,9 +68,9 @@
             // garbHistRelBut
             // 
             this.garbHistRelBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbHistRelBut.Location = new System.Drawing.Point(619, 79);
+            this.garbHistRelBut.Location = new System.Drawing.Point(554, 51);
             this.garbHistRelBut.Name = "garbHistRelBut";
-            this.garbHistRelBut.Size = new System.Drawing.Size(75, 23);
+            this.garbHistRelBut.Size = new System.Drawing.Size(147, 23);
             this.garbHistRelBut.TabIndex = 4;
             this.garbHistRelBut.Text = "REFRESH";
             this.garbHistRelBut.UseVisualStyleBackColor = true;
@@ -80,9 +79,9 @@
             // garbHistSearchBut
             // 
             this.garbHistSearchBut.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.garbHistSearchBut.Location = new System.Drawing.Point(457, 79);
+            this.garbHistSearchBut.Location = new System.Drawing.Point(554, 79);
             this.garbHistSearchBut.Name = "garbHistSearchBut";
-            this.garbHistSearchBut.Size = new System.Drawing.Size(75, 23);
+            this.garbHistSearchBut.Size = new System.Drawing.Size(66, 23);
             this.garbHistSearchBut.TabIndex = 5;
             this.garbHistSearchBut.Text = "SEARCH";
             this.garbHistSearchBut.UseVisualStyleBackColor = true;
@@ -93,7 +92,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = global::HOAWinApp.Properties.Resources.ambotwabalo;
+            this.BackgroundImage = global::HOAWinApp.Properties.Resources.garbpayhist;
             this.Controls.Add(this.garbHistSearchBut);
             this.Controls.Add(this.garbHistRelBut);
             this.Controls.Add(this.garbHistExpBut);

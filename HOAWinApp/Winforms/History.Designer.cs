@@ -43,7 +43,7 @@
             this.histTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.histTopPanel.Location = new System.Drawing.Point(0, 0);
             this.histTopPanel.Name = "histTopPanel";
-            this.histTopPanel.Size = new System.Drawing.Size(714, 31);
+            this.histTopPanel.Size = new System.Drawing.Size(714, 35);
             this.histTopPanel.TabIndex = 0;
             this.histTopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.garbHistTopPanel_MouseDown);
             this.histTopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.garbHistTopPanel_MouseMove);
@@ -51,19 +51,21 @@
             // 
             // histBotPanel
             // 
-            this.histBotPanel.Location = new System.Drawing.Point(0, 26);
+            this.histBotPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.histBotPanel.Location = new System.Drawing.Point(0, 35);
             this.histBotPanel.Name = "histBotPanel";
-            this.histBotPanel.Size = new System.Drawing.Size(714, 360);
+            this.histBotPanel.Size = new System.Drawing.Size(714, 325);
             this.histBotPanel.TabIndex = 1;
+            this.histBotPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.histBotPanel_Paint);
             // 
             // histPicBoxX
             // 
             this.histPicBoxX.BackColor = System.Drawing.Color.Transparent;
             this.histPicBoxX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.histPicBoxX.Image = ((System.Drawing.Image)(resources.GetObject("histPicBoxX.Image")));
-            this.histPicBoxX.Location = new System.Drawing.Point(685, 0);
+            this.histPicBoxX.Location = new System.Drawing.Point(670, 0);
             this.histPicBoxX.Name = "histPicBoxX";
-            this.histPicBoxX.Size = new System.Drawing.Size(34, 28);
+            this.histPicBoxX.Size = new System.Drawing.Size(49, 35);
             this.histPicBoxX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.histPicBoxX.TabIndex = 0;
             this.histPicBoxX.TabStop = false;

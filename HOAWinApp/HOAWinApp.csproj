@@ -236,6 +236,11 @@
     <Compile Include="dbConnect.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Screen\MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -367,14 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Screen\MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -411,11 +411,17 @@
     <EmbeddedResource Include="UserControls\WaterCollection.resx">
       <DependentUpon>WaterCollection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WaterHistory.resx">
+      <DependentUpon>WaterHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Winforms\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Winforms\AddPayment.resx">
       <DependentUpon>AddPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Winforms\AddWaterPayment.resx">
+      <DependentUpon>AddWaterPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Winforms\DisplayWaterHistory.resx">
       <DependentUpon>DisplayWaterHistory.cs</DependentUpon>
@@ -449,6 +455,29 @@
   <ItemGroup>
     <Content Include="Images\haniyyah-high-resolution-logo.png" />
     <Content Include="Images\shutdown.png" />
+    <None Include="Resources\bgv4.png" />
+    <None Include="Resources\bgv3.png" />
+    <None Include="Resources\bgv2.png" />
+    <None Include="Resources\editclient - Copy2.png" />
+    <None Include="Resources\editclient - Copy.png" />
+    <None Include="Resources\editclient2.png" />
+    <None Include="Resources\addclient1.png" />
+    <None Include="Resources\historyagain.png" />
+    <None Include="Resources\waterPbg2.png" />
+    <None Include="Resources\waterPbg1.png" />
+    <None Include="Resources\waterPbg.png" />
+    <None Include="Resources\upup.png" />
+    <None Include="Resources\UPsreading41.png" />
+    <None Include="Resources\updateReading2.png" />
+    <None Include="Resources\garbpayhist.png" />
+    <None Include="Resources\subBut.png" />
+    <None Include="Resources\grabaddpayments4.png" />
+    <None Include="Resources\grabaddpayments3.png" />
+    <None Include="Resources\grabaddpayments2.png" />
+    <None Include="Resources\grabaddpayments1.png" />
+    <None Include="Resources\grabaddPayment.png" />
+    <None Include="Resources\clientlist1.png" />
+    <None Include="Resources\kilidClient.png" />
     <None Include="Resources\garbagecol15.png" />
     <None Include="Resources\garbagecol14.png" />
     <None Include="Resources\garbagecol13.png" />

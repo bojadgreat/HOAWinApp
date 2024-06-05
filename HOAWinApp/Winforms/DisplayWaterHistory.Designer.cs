@@ -38,7 +38,7 @@
             // 
             // histTopPanel
             // 
-            this.histTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(157)))), ((int)(((byte)(42)))));
+            this.histTopPanel.BackColor = System.Drawing.Color.Black;
             this.histTopPanel.Controls.Add(this.pictureBox1);
             this.histTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.histTopPanel.Location = new System.Drawing.Point(0, 0);
@@ -59,11 +59,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(468, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(461, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;

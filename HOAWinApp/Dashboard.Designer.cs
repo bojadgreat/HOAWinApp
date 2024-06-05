@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.mainContainer = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.histPicBoxX1 = new System.Windows.Forms.PictureBox();
             this.clientButt = new MetroFramework.Controls.MetroButton();
             this.homeButt = new MetroFramework.Controls.MetroButton();
             this.wcButt = new MetroFramework.Controls.MetroButton();
             this.gcButt = new MetroFramework.Controls.MetroButton();
-            this.histPicBoxX1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.histPicBoxX1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,19 @@
             this.panel1.Size = new System.Drawing.Size(1366, 171);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // histPicBoxX1
+            // 
+            this.histPicBoxX1.BackColor = System.Drawing.Color.Transparent;
+            this.histPicBoxX1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.histPicBoxX1.Image = ((System.Drawing.Image)(resources.GetObject("histPicBoxX1.Image")));
+            this.histPicBoxX1.Location = new System.Drawing.Point(1313, 0);
+            this.histPicBoxX1.Name = "histPicBoxX1";
+            this.histPicBoxX1.Size = new System.Drawing.Size(66, 41);
+            this.histPicBoxX1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.histPicBoxX1.TabIndex = 1;
+            this.histPicBoxX1.TabStop = false;
+            this.histPicBoxX1.Click += new System.EventHandler(this.histPicBoxX1_Click);
             // 
             // clientButt
             // 
@@ -116,19 +129,6 @@
             this.gcButt.TabIndex = 5;
             this.gcButt.UseSelectable = true;
             this.gcButt.Click += new System.EventHandler(this.gcButt_Click);
-            // 
-            // histPicBoxX1
-            // 
-            this.histPicBoxX1.BackColor = System.Drawing.Color.Transparent;
-            this.histPicBoxX1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.histPicBoxX1.Image = ((System.Drawing.Image)(resources.GetObject("histPicBoxX1.Image")));
-            this.histPicBoxX1.Location = new System.Drawing.Point(1313, 0);
-            this.histPicBoxX1.Name = "histPicBoxX1";
-            this.histPicBoxX1.Size = new System.Drawing.Size(66, 41);
-            this.histPicBoxX1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.histPicBoxX1.TabIndex = 1;
-            this.histPicBoxX1.TabStop = false;
-            this.histPicBoxX1.Click += new System.EventHandler(this.histPicBoxX1_Click);
             // 
             // Dashboard
             // 

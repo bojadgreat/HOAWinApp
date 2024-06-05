@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.payAmTB = new System.Windows.Forms.TextBox();
             this.dtpGarbHist = new System.Windows.Forms.DateTimePicker();
-            this.canBut = new System.Windows.Forms.Button();
-            this.subBut = new System.Windows.Forms.Button();
             this.clientNameTB = new System.Windows.Forms.TextBox();
             this.remCBox = new System.Windows.Forms.ComboBox();
             this.promCBox = new System.Windows.Forms.CheckBox();
@@ -41,14 +39,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.clientNameLabel = new System.Windows.Forms.Label();
+            this.canBut = new MetroFramework.Controls.MetroButton();
+            this.subBut = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.addPaymentErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // payAmTB
             // 
-            this.payAmTB.Location = new System.Drawing.Point(135, 96);
+            this.payAmTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.payAmTB.Location = new System.Drawing.Point(331, 161);
             this.payAmTB.Name = "payAmTB";
-            this.payAmTB.Size = new System.Drawing.Size(238, 20);
+            this.payAmTB.Size = new System.Drawing.Size(320, 22);
             this.payAmTB.TabIndex = 4;
             this.payAmTB.TabStop = false;
             this.payAmTB.TextChanged += new System.EventHandler(this.payAmTB_TextChanged);
@@ -58,45 +59,19 @@
             this.dtpGarbHist.CustomFormat = "yyyy-MM-dd";
             this.dtpGarbHist.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpGarbHist.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpGarbHist.Location = new System.Drawing.Point(135, 131);
+            this.dtpGarbHist.Location = new System.Drawing.Point(331, 232);
             this.dtpGarbHist.Name = "dtpGarbHist";
-            this.dtpGarbHist.Size = new System.Drawing.Size(238, 21);
+            this.dtpGarbHist.Size = new System.Drawing.Size(94, 21);
             this.dtpGarbHist.TabIndex = 5;
             this.dtpGarbHist.TabStop = false;
             this.dtpGarbHist.Value = new System.DateTime(2024, 2, 24, 0, 0, 0, 0);
             // 
-            // canBut
-            // 
-            this.canBut.BackColor = System.Drawing.Color.Transparent;
-            this.canBut.BackgroundImage = global::HOAWinApp.Properties.Resources.CANCEL;
-            this.canBut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(96)))), ((int)(((byte)(98)))));
-            this.canBut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.canBut.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.canBut.Location = new System.Drawing.Point(15, 226);
-            this.canBut.Name = "canBut";
-            this.canBut.Size = new System.Drawing.Size(176, 40);
-            this.canBut.TabIndex = 1;
-            this.canBut.UseVisualStyleBackColor = false;
-            this.canBut.Click += new System.EventHandler(this.canBut_Click);
-            // 
-            // subBut
-            // 
-            this.subBut.BackColor = System.Drawing.Color.Transparent;
-            this.subBut.BackgroundImage = global::HOAWinApp.Properties.Resources.submit;
-            this.subBut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.subBut.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subBut.Location = new System.Drawing.Point(217, 226);
-            this.subBut.Name = "subBut";
-            this.subBut.Size = new System.Drawing.Size(180, 40);
-            this.subBut.TabIndex = 2;
-            this.subBut.UseVisualStyleBackColor = false;
-            this.subBut.Click += new System.EventHandler(this.subBut_Click);
-            // 
             // clientNameTB
             // 
-            this.clientNameTB.Location = new System.Drawing.Point(135, 61);
+            this.clientNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientNameTB.Location = new System.Drawing.Point(331, 104);
             this.clientNameTB.Name = "clientNameTB";
-            this.clientNameTB.Size = new System.Drawing.Size(238, 20);
+            this.clientNameTB.Size = new System.Drawing.Size(320, 22);
             this.clientNameTB.TabIndex = 3;
             this.clientNameTB.TabStop = false;
             this.clientNameTB.TextChanged += new System.EventHandler(this.clientNameTB_TextChanged);
@@ -106,22 +81,24 @@
             // remCBox
             // 
             this.remCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.remCBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remCBox.FormattingEnabled = true;
-            this.remCBox.Location = new System.Drawing.Point(135, 167);
+            this.remCBox.Location = new System.Drawing.Point(584, 234);
             this.remCBox.Name = "remCBox";
-            this.remCBox.Size = new System.Drawing.Size(238, 21);
+            this.remCBox.Size = new System.Drawing.Size(67, 21);
             this.remCBox.TabIndex = 6;
             // 
             // promCBox
             // 
             this.promCBox.AutoSize = true;
-            this.promCBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.promCBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.promCBox.Location = new System.Drawing.Point(135, 210);
+            this.promCBox.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.promCBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.promCBox.Location = new System.Drawing.Point(488, 261);
             this.promCBox.Name = "promCBox";
-            this.promCBox.Size = new System.Drawing.Size(160, 16);
+            this.promCBox.Size = new System.Drawing.Size(163, 24);
             this.promCBox.TabIndex = 7;
             this.promCBox.Text = "Apply For Promissory Note";
+            this.promCBox.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.promCBox.UseVisualStyleBackColor = true;
             this.promCBox.CheckedChanged += new System.EventHandler(this.promCBox_CheckedChanged);
             // 
@@ -171,22 +148,48 @@
             this.clientNameLabel.Text = "Client Name:";
             this.clientNameLabel.Click += new System.EventHandler(this.clientNameLabel_Click);
             // 
+            // canBut
+            // 
+            this.canBut.BackColor = System.Drawing.Color.Transparent;
+            this.canBut.BackgroundImage = global::HOAWinApp.Properties.Resources.CANCEL;
+            this.canBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.canBut.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.canBut.Location = new System.Drawing.Point(214, 290);
+            this.canBut.Name = "canBut";
+            this.canBut.Size = new System.Drawing.Size(176, 40);
+            this.canBut.TabIndex = 8;
+            this.canBut.UseSelectable = true;
+            this.canBut.Click += new System.EventHandler(this.canBut_Click);
+            // 
+            // subBut
+            // 
+            this.subBut.BackColor = System.Drawing.Color.Transparent;
+            this.subBut.BackgroundImage = global::HOAWinApp.Properties.Resources.subBut;
+            this.subBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.subBut.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.subBut.Location = new System.Drawing.Point(443, 290);
+            this.subBut.Name = "subBut";
+            this.subBut.Size = new System.Drawing.Size(176, 40);
+            this.subBut.TabIndex = 9;
+            this.subBut.UseSelectable = true;
+            this.subBut.Click += new System.EventHandler(this.subBut_Click);
+            // 
             // GarbAddPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = global::HOAWinApp.Properties.Resources.GARBAGE_COLLECTION_DATA1;
+            this.BackgroundImage = global::HOAWinApp.Properties.Resources.grabaddpayments4;
+            this.Controls.Add(this.subBut);
+            this.Controls.Add(this.canBut);
             this.Controls.Add(this.promCBox);
             this.Controls.Add(this.remCBox);
             this.Controls.Add(this.clientNameTB);
-            this.Controls.Add(this.subBut);
-            this.Controls.Add(this.canBut);
             this.Controls.Add(this.dtpGarbHist);
             this.Controls.Add(this.payAmTB);
             this.Name = "GarbAddPayment";
-            this.Size = new System.Drawing.Size(400, 266);
+            this.Size = new System.Drawing.Size(714, 360);
             this.Load += new System.EventHandler(this.garbAddPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.addPaymentErrorProvider)).EndInit();
             this.ResumeLayout(false);
@@ -197,8 +200,6 @@
         #endregion
         private System.Windows.Forms.TextBox payAmTB;
         private System.Windows.Forms.DateTimePicker dtpGarbHist;
-        private System.Windows.Forms.Button canBut;
-        private System.Windows.Forms.Button subBut;
         private System.Windows.Forms.TextBox clientNameTB;
         private System.Windows.Forms.ComboBox remCBox;
         private System.Windows.Forms.CheckBox promCBox;
@@ -207,5 +208,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label clientNameLabel;
+        private MetroFramework.Controls.MetroButton canBut;
+        private MetroFramework.Controls.MetroButton subBut;
     }
 }

@@ -35,19 +35,19 @@
             // updateBotPanel
             // 
             this.updateBotPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.updateBotPanel.Location = new System.Drawing.Point(0, 25);
+            this.updateBotPanel.Location = new System.Drawing.Point(0, 35);
             this.updateBotPanel.Name = "updateBotPanel";
-            this.updateBotPanel.Size = new System.Drawing.Size(339, 327);
+            this.updateBotPanel.Size = new System.Drawing.Size(732, 325);
             this.updateBotPanel.TabIndex = 1;
             // 
             // updateTopPanel
             // 
-            this.updateTopPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.updateTopPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.updateTopPanel.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.updateTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.updateTopPanel.Location = new System.Drawing.Point(0, 0);
             this.updateTopPanel.Name = "updateTopPanel";
-            this.updateTopPanel.Size = new System.Drawing.Size(339, 25);
+            this.updateTopPanel.Size = new System.Drawing.Size(732, 35);
             this.updateTopPanel.TabIndex = 0;
             this.updateTopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.updateTopPanel_MouseDown);
             this.updateTopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.updateTopPanel_MouseMove);
@@ -57,12 +57,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 352);
+            this.ClientSize = new System.Drawing.Size(732, 360);
             this.Controls.Add(this.updateBotPanel);
             this.Controls.Add(this.updateTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(30, 50);
             this.Name = "WaterUpdateForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WaterUpdateForm";
             this.ResumeLayout(false);
 

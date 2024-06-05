@@ -124,17 +124,26 @@
   <data name="kilidwater" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilidwater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kilid3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kilid3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Generate Excel Report (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Generate Excel Report (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="center8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\center8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="upup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled design (8)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled design (8)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ambotwabalo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ambotwabalo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grabaddPayment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grabaddPayment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tri3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tri3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WATER COLLECTION (6)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION (6)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +172,17 @@
   <data name="tri1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tri1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="editclient - Copy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editclient - Copy2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clientlist1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clientlist1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="garbagecol13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garbagecol13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="center4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\center4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kilidwater3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilidwater3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +199,14 @@
   <data name="Generate Excel Report (2)3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report (2)3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="grabaddpayments2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grabaddpayments2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bgDashBoad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgDashBoad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgv3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgv3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="center13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\center13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,6 +217,9 @@
   <data name="kilidwater6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilidwater6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="center7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\center7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="kilidwater2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilidwater2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,17 +229,14 @@
   <data name="kilid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilid1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="garbagecol14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garbagecol14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WATER COLLECTION (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WATER COLLECTION (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dashboardheader21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashboardheader21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Generate Excel Report (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Generate Excel Report (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Generate Excel Report (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tri31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tri31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -225,6 +249,9 @@
   </data>
   <data name="watercol2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\watercol2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waterPbg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waterPbg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="center9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\center9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,11 +271,11 @@
   <data name="WATER COLLECTION (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="center11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\center11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kilid3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kilid3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled design (7)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled design (7)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="waterPbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waterPbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="postPayment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postPayment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,8 +283,8 @@
   <data name="Generate Excel Report (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="center7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\center7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UPreading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPreading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kilid22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilid22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,6 +313,9 @@
   <data name="bgMainBoard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgMainBoard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="grabaddpayments3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grabaddpayments3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="WATER COLLECTION (3)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION (3)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -313,17 +343,20 @@
   <data name="kilid2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilid2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="db3 (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\db3 (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="garbGER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garbGER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dashboardheader2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dashboardheader2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="garbagecol14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garbagecol14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clientlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clientlist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kilidwater41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilidwater41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgDashBoardv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgDashBoardv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="watercol1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\watercol1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -349,20 +382,23 @@
   <data name="dashboardheader1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashboardheader1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UPsreading2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPsreading2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Generate Excel Report4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WATER COLLECTION (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WATER COLLECTION (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kilidClient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kilidClient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled design (7)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled design (7)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="garbpayhist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garbpayhist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tri32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tri32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="updateReading1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updateReading1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WATER COLLECTION (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -373,14 +409,23 @@
   <data name="garbcolo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garbcolo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="center4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\center4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="waterPbg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waterPbg2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashboardheader2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashboardheader2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WATER COLLECTION (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="editclient2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editclient2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="center10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\center10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addclient1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addclient1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -391,17 +436,17 @@
   <data name="Generate Excel Report3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="historyagain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\historyagain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Untitled design (7)5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design (7)5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kilidwater5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilidwater5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tri3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tri3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="garbGER" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garbGER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mainboardRightbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainboardRightbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="watercoll4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\watercoll4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -412,8 +457,8 @@
   <data name="WATER COLLECTION (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kilid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kilid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="subBut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subBut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="db3 (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\db3 (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -424,8 +469,8 @@
   <data name="kilidwater4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kilidwater4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled design (8)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled design (8)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="center11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\center11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mainboardRightbg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mainboardRightbg2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -433,8 +478,8 @@
   <data name="dash13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dash13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Generate Excel Report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Generate Excel Report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UPsreading1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPsreading1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled design (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design (9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -454,14 +499,23 @@
   <data name="WATER COLLECTION (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="garbagecol15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garbagecol15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UPsreading3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPsreading3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dh31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dh31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="POST PAYMENT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\POST PAYMENT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="center3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\center3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="editclient - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editclient - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="db3 (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\db3 (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WATER COLLECTION DATA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION DATA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -502,6 +556,9 @@
   <data name="editclient1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editclient1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HOME" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HOME3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dashGarbCol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashGarbCol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -526,29 +583,41 @@
   <data name="Untitled design (7)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design (7)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GARBAGE COLLECTION DATA (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GARBAGE COLLECTION DATA (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grabaddpayments4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grabaddpayments4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ambotwabalo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ambotwabalo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="garbcoll4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garbcoll4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dashboard header" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashboard header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Generate Excel Report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Generate Excel Report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GARBAGE COLLECTION DATA (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GARBAGE COLLECTION DATA (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="db3 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\db3 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kilid4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kilid4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UPsreading41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPsreading41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled design (7)6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design (7)6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HOME" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HOME3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kilid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kilid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="postpayment2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postpayment2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -556,11 +625,20 @@
   <data name="POST PAYMENT (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\POST PAYMENT (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kilid4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kilid4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UPsreading4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPsreading4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Generate Excel Report (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="addclient" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addclient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dash15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dash15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -583,23 +661,20 @@
   <data name="Generate Excel Report" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bgDashBoardv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgDashBoardv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="center3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\center3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Generate Excel Report (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mainboardRightbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainboardRightbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grabaddpayments1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grabaddpayments1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WATER COLLECTION DATA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WATER COLLECTION DATA2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="garbcoll1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garbcoll1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="updatereading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updatereading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dashhome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashhome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -619,7 +694,7 @@
   <data name="Generate Excel Report (3)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Generate Excel Report (3)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="garbagecol15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garbagecol15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bgv4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgv4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

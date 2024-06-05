@@ -73,6 +73,16 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addclient1 {
+            get {
+                object obj = ResourceManager.GetObject("addclient1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ambot {
             get {
                 object obj = ResourceManager.GetObject("ambot", resourceCulture);
@@ -126,6 +136,36 @@ namespace HOAWinApp.Properties {
         internal static System.Drawing.Bitmap bgMainBoard {
             get {
                 object obj = ResourceManager.GetObject("bgMainBoard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgv2 {
+            get {
+                object obj = ResourceManager.GetObject("bgv2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgv3 {
+            get {
+                object obj = ResourceManager.GetObject("bgv3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgv4 {
+            get {
+                object obj = ResourceManager.GetObject("bgv4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +316,16 @@ namespace HOAWinApp.Properties {
         internal static System.Drawing.Bitmap clientlist {
             get {
                 object obj = ResourceManager.GetObject("clientlist", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clientlist1 {
+            get {
+                object obj = ResourceManager.GetObject("clientlist1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -553,9 +603,39 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap editclient___Copy {
+            get {
+                object obj = ResourceManager.GetObject("editclient - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editclient___Copy2 {
+            get {
+                object obj = ResourceManager.GetObject("editclient - Copy2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap editclient1 {
             get {
                 object obj = ResourceManager.GetObject("editclient1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editclient2 {
+            get {
+                object obj = ResourceManager.GetObject("editclient2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -743,6 +823,16 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap garbpayhist {
+            get {
+                object obj = ResourceManager.GetObject("garbpayhist", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap garbPP {
             get {
                 object obj = ResourceManager.GetObject("garbPP", resourceCulture);
@@ -913,6 +1003,56 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grabaddPayment {
+            get {
+                object obj = ResourceManager.GetObject("grabaddPayment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grabaddpayments1 {
+            get {
+                object obj = ResourceManager.GetObject("grabaddpayments1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grabaddpayments2 {
+            get {
+                object obj = ResourceManager.GetObject("grabaddpayments2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grabaddpayments3 {
+            get {
+                object obj = ResourceManager.GetObject("grabaddpayments3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grabaddpayments4 {
+            get {
+                object obj = ResourceManager.GetObject("grabaddpayments4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hatdog {
             get {
                 object obj = ResourceManager.GetObject("hatdog", resourceCulture);
@@ -926,6 +1066,16 @@ namespace HOAWinApp.Properties {
         internal static System.Drawing.Bitmap History {
             get {
                 object obj = ResourceManager.GetObject("History", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap historyagain {
+            get {
+                object obj = ResourceManager.GetObject("historyagain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1036,6 +1186,16 @@ namespace HOAWinApp.Properties {
         internal static System.Drawing.Bitmap kilid5 {
             get {
                 object obj = ResourceManager.GetObject("kilid5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kilidClient {
+            get {
+                object obj = ResourceManager.GetObject("kilidClient", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1293,6 +1453,16 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap subBut {
+            get {
+                object obj = ResourceManager.GetObject("subBut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap submit {
             get {
                 object obj = ResourceManager.GetObject("submit", resourceCulture);
@@ -1483,9 +1653,9 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap updatereading {
+        internal static System.Drawing.Bitmap UPreading {
             get {
-                object obj = ResourceManager.GetObject("updatereading", resourceCulture);
+                object obj = ResourceManager.GetObject("UPreading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1493,9 +1663,59 @@ namespace HOAWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap updateReading1 {
+        internal static System.Drawing.Bitmap UPsreading1 {
             get {
-                object obj = ResourceManager.GetObject("updateReading1", resourceCulture);
+                object obj = ResourceManager.GetObject("UPsreading1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UPsreading2 {
+            get {
+                object obj = ResourceManager.GetObject("UPsreading2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UPsreading3 {
+            get {
+                object obj = ResourceManager.GetObject("UPsreading3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UPsreading4 {
+            get {
+                object obj = ResourceManager.GetObject("UPsreading4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UPsreading41 {
+            get {
+                object obj = ResourceManager.GetObject("UPsreading41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upup {
+            get {
+                object obj = ResourceManager.GetObject("upup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1736,6 +1956,36 @@ namespace HOAWinApp.Properties {
         internal static System.Drawing.Bitmap watercoll4 {
             get {
                 object obj = ResourceManager.GetObject("watercoll4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waterPbg {
+            get {
+                object obj = ResourceManager.GetObject("waterPbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waterPbg1 {
+            get {
+                object obj = ResourceManager.GetObject("waterPbg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waterPbg2 {
+            get {
+                object obj = ResourceManager.GetObject("waterPbg2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

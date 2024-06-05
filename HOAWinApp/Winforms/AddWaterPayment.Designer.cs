@@ -32,36 +32,36 @@
             this.addWaterPaymentBotPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // addPaymentTopPanel
+            // addWaterPaymentTopPanel
             // 
-            this.addWaterPaymentTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(157)))), ((int)(((byte)(42)))));
+            this.addWaterPaymentTopPanel.BackColor = System.Drawing.Color.Black;
             this.addWaterPaymentTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.addWaterPaymentTopPanel.Location = new System.Drawing.Point(0, 0);
-            this.addWaterPaymentTopPanel.Name = "addPaymentTopPanel";
-            this.addWaterPaymentTopPanel.Size = new System.Drawing.Size(400, 20);
+            this.addWaterPaymentTopPanel.Name = "addWaterPaymentTopPanel";
+            this.addWaterPaymentTopPanel.Size = new System.Drawing.Size(714, 20);
             this.addWaterPaymentTopPanel.TabIndex = 0;
             this.addWaterPaymentTopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.addWaterPaymentTopPanel_MouseDown);
             this.addWaterPaymentTopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.addWaterPaymentTopPanel_MouseMove);
             this.addWaterPaymentTopPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.addWaterPaymentTopPanel_MouseUp);
             // 
-            // addPaymentBotPanel
+            // addWaterPaymentBotPanel
             // 
             this.addWaterPaymentBotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addWaterPaymentBotPanel.Location = new System.Drawing.Point(0, 20);
-            this.addWaterPaymentBotPanel.Name = "addPaymentBotPanel";
-            this.addWaterPaymentBotPanel.Size = new System.Drawing.Size(400, 200);
+            this.addWaterPaymentBotPanel.Name = "addWaterPaymentBotPanel";
+            this.addWaterPaymentBotPanel.Size = new System.Drawing.Size(714, 340);
             this.addWaterPaymentBotPanel.TabIndex = 1;
             this.addWaterPaymentBotPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addWaterPaymentBotPanel_Paint);
             // 
-            // AddPayment
+            // AddWaterPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 220);
+            this.ClientSize = new System.Drawing.Size(714, 360);
             this.Controls.Add(this.addWaterPaymentBotPanel);
             this.Controls.Add(this.addWaterPaymentTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddPayment";
+            this.Name = "AddWaterPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Payment";
             this.ResumeLayout(false);
